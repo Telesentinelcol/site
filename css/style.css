@@ -1,0 +1,2578 @@
+@font-face
+{
+    font-family:"OpenSans-Light";
+    src:url(open-sans/otf/OpenSans-Light.otf);
+    src:url(open-sans/eot/OpenSans-Light.eot?#telesentinel) format("embedded-opentype"),url(open-sans/woff/OpenSans-Light.woff) format("woff"),url(open-sans/ttf/OpenSans-Light.ttf) format("truetype"),url(open-sans/svg/opensans.svg#OpenSans-Light) format("svg")
+}
+
+@font-face
+{
+    font-family:"OpenSans-Regular";
+    src:url(open-sans/otf/OpenSans-Regular.otf);
+    src:url(open-sans/eot/OpenSans-Regular.eot?#telesentinel) format("embedded-opentype"),url(open-sans/woff/OpenSans-Regular.woff) format("woff"),url(open-sans/ttf/OpenSans-Regular.ttf) format("truetype"),url(open-sans/svg/OpenSans-Regular.svg#OpenSans) format("svg")
+}
+
+body
+{
+    margin:0;
+    padding:0;
+    border:0;
+    width:100%;
+    text-align:center;
+    font-family:'Open Sans','OpenSans-Light'
+}
+
+a
+{
+    text-decoration:none
+}
+
+header
+{
+    height:44px;
+    position:fixed;
+    z-index:99999;
+    width:100%;
+    padding:0 10%
+}
+
+.logo
+{
+    width:20px;
+    height:20px;
+    margin:0!important
+}
+
+.logotipo
+{
+    position:fixed;
+    left:0;
+    top:52px;
+    height:80px;
+    z-index:1000;
+    width:100%;
+    background:rgba(255,255,255,0.7);
+    background-image:url(../img/logotipo.png);
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+    background-position:10px center;
+    box-shadow:0 10px 10px rgba(255,255,255,0.5)
+}
+
+.logotipo-monitoreo
+{
+    position:fixed;
+    left:0;
+    top:52px;
+    height:50px;
+    z-index:1001;
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    background:rgba(255,255,255,0.9);
+    background-image:url(../img/LogoTelesentinelMonitoreoDeAlarmas.svg);
+    background-repeat:no-repeat;
+    background-size:auto 40%;
+    background-position:5% center
+}
+
+.logotipo-monitoreo ul
+{
+    width:auto;
+    float:right;
+    margin:15px 5% 0 0
+}
+
+.logotipo-monitoreo ul li
+{
+    display:inline-block;
+    margin:0 10px
+}
+
+.logotipo-monitoreo ul li a
+{
+    color:rgba(50,50,50,1);
+    font-size:12px;
+    font-weight:200;
+    letter-spacing:2px
+}
+
+.logotipo-televideo
+{
+    position:fixed;
+    left:0;
+    top:52px;
+    height:50px;
+    z-index:1001;
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    background:rgba(255,255,255,0.9);
+    background-image:url(../img/LogoTelesentinelTelevideo.svg);
+    background-repeat:no-repeat;
+    background-size:auto 40%;
+    background-position:5% center
+}
+
+.logotipo-televideo ul
+{
+    width:auto;
+    float:right;
+    margin:15px 5% 0 0
+}
+
+.logotipo-televideo ul li
+{
+    display:inline-block;
+    margin:0 10px
+}
+
+.logotipo-televideo ul li a
+{
+    color:rgba(50,50,50,1);
+    font-size:12px;
+    font-weight:200;
+    letter-spacing:2px
+}
+
+.logotipo-rastreo
+{
+    position:fixed;
+    left:0;
+    top:52px;
+    height:50px;
+    z-index:1001;
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    background:rgba(255,255,255,0.9);
+    background-image:url(../img/LogoTelesentinelRastreoVehicular.svg);
+    background-repeat:no-repeat;
+    background-size:auto 40%;
+    background-position:5% center
+}
+
+.logotipo-rastreo ul
+{
+    width:auto;
+    float:right;
+    margin:15px 5% 0 0
+}
+
+.logotipo-rastreo ul li
+{
+    display:inline-block;
+    margin:0 10px
+}
+
+.logotipo-rastreo ul li a
+{
+    color:rgba(50,50,50,1);
+    font-size:12px;
+    font-weight:200;
+    letter-spacing:2px
+}
+
+.logo-cell
+{
+    display:none
+}
+
+#icon-logo
+{
+    display:block
+}
+
+.img-home,.img-monitoreo,.img-televideo
+{
+    position:absolute;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    top:0;
+    transform:initial!important
+}
+
+.img-rastreo
+{
+    position:absolute;
+    width:400px;
+    right:150px;
+    top:250px
+}
+
+.img-monitoreo:hover
+{
+    cursor:pointer
+}
+
+.img-televideo:hover
+{
+    cursor:pointer
+}
+
+.img-rastreo:hover
+{
+    cursor:pointer
+}
+
+.info-text
+{
+    position:absolute;
+    width:26%;
+    left:50px;
+    top:30%
+}
+
+.ti-televideo
+{
+    margin-top:10%
+}
+
+.ondas
+{
+    position:absolute;
+    right:25%;
+    top:200px;
+    transform:rotate(20deg);
+    width:200px;
+    opacity:.3
+}
+
+.ondas-dos
+{
+    position:absolute;
+    right:43%;
+    top:800px;
+    transform:rotate(-15deg);
+    width:300px;
+    opacity:.3
+}
+
+.ondas-televiu
+{
+    position:absolute;
+    right:33%;
+    top:181px;
+    transform:rotate(90deg);
+    width:200px;
+    opacity:.3
+}
+
+.ondas-tres
+{
+    position:absolute;
+    right:40%;
+    top:24%;
+    transform:rotate(1deg);
+    width:300px;
+    opacity:.3;
+    animation:aparece 6s;
+    -o-animation:aparece 6s;
+    -webkit-animation:aparece 6s;
+    -moz-animation:aparece 6s
+}
+
+.ondasedificio
+{
+    position:absolute;
+    left:5%;
+    bottom:18%;
+    transform:rotate(80deg);
+    width:150px;
+    opacity:.7
+}
+
+.ondasedificio-rastreo
+{
+    position:absolute;
+    left:6%;
+    bottom:-22%;
+    transform:rotate(80deg);
+    width:200px;
+    opacity:.7
+}
+
+.tooltip
+{
+    position:absolute;
+    width:2.2em;
+    height:2.2em;
+    cursor:pointer;
+    opacity:1!important;
+    z-index:initial!important
+}
+
+.tooltip-item
+{
+    width:30px;
+    height:30px;
+    left:50%;
+    margin:-15px 0 0 -15px;
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,1.00);
+    border:2px solid rgba(255,0,0,1);
+    box-shadow:0 0 10px rgba(0,0,0,1);
+    animation:pulse .9s infinite alternate;
+    -webkit-animation:pulse .9s infinite alternate;
+    -moz-animation:pulse .9s infinite alternate;
+    -o-animation:pulse .9s infinite alternate;
+    -ms-animation:pulse .9s infinite alternate
+}
+
+.tooltip:hover .tooltip-item
+{
+    border-color:orange
+}
+
+.tooltip-content
+{
+    background:rgba(255,255,255,1);
+    box-shadow:0 0 5px rgba(0,0,0,0.5);
+    bottom:50%;
+    border-radius:20px;
+    position:absolute;
+    width:200px;
+    z-index:10001;
+    margin-bottom:-1em;
+    font-size:1.1em;
+    text-align:center;
+    color:rgba(0,0,0,1);
+    opacity:0;
+    cursor:default;
+    pointer-events:none;
+    font-family:'Open Sans',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -webkit-transition:opacity 0.3s,-webkit-transform .3s;
+    transition:opacity 0.3s,transform .3s
+}
+
+.tooltip-west .tooltip-content
+{
+    left:4em;
+    -webkit-transform-origin:-2em 50%;
+    transform-origin:-2em 50%;
+    -webkit-transform:translate3d(0,50%,0) rotate3d(1,1,1,30deg);
+    transform:translate3d(0,50%,0) rotate3d(1,1,1,30deg)
+}
+
+.tooltip-east .tooltip-content
+{
+    right:4em;
+    -webkit-transform-origin:calc(100% + 2em) 50%;
+    transform-origin:calc(100% + 2em) 50%;
+    -webkit-transform:translate3d(0,50%,0) rotate3d(1,1,1,-30deg);
+    transform:translate3d(0,50%,0) rotate3d(1,1,1,-30deg)
+}
+
+.tooltip:hover .tooltip-content
+{
+    opacity:1;
+    -webkit-transform:translate3d(0,50%,0) rotate3d(0,0,0,0);
+    transform:translate3d(0,50%,0) rotate3d(0,0,0,0);
+    pointer-events:auto
+}
+
+.tooltip-content::before,.tooltip-content::after
+{
+    content:'';
+    position:absolute
+}
+
+.tooltip-content::before
+{
+    height:100%;
+    width:3em
+}
+
+.tooltip-content::after
+{
+    width:2em;
+    height:2em;
+    top:50%;
+    margin:-1em 0 0;
+    background:url(../img/tooltip2.svg) no-repeat center center;
+    background-size:100%
+}
+
+.tooltip-west .tooltip-content::before,.tooltip-west .tooltip-content::after
+{
+    right:99%
+}
+
+.tooltip-east .tooltip-content::before,.tooltip-east .tooltip-content::after
+{
+    left:99%
+}
+
+.tooltip-east .tooltip-content::after
+{
+    -webkit-transform:scale3d(-1,1,1);
+    transform:scale3d(-1,1,1)
+}
+
+.btn-secciones
+{
+    height:110px;
+    border-bottom:1px solid #fff!important;
+    width:100%;
+    float:left;
+    position:relative;
+    background-color:rgba(0,0,0,0.4)
+}
+
+.btn-secciones p
+{
+    font-size:.8em;
+    font-weight:100;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    color:rgba(255,255,255,1)
+}
+
+.arriba
+{
+    background:rgba(255,255,255,1);
+    background-repeat:no-repeat;
+    background-size:auto 80%;
+    background-position:center;
+    background-image:url(../img/abajo.svg);
+    bottom:17%;
+    border-radius:50%;
+    height:60px;
+    position:absolute;
+    right:1%;
+    width:60px;
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    transform:rotate(180deg)
+}
+
+.arribamonitoreo
+{
+    width:50px;
+    height:50px;
+    background-repeat:no-repeat;
+    background-image:url(../img/abajo.svg);
+    position:absolute;
+    bottom:18%;
+    right:10%;
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    transform:rotate(180deg)
+}
+
+.abajo
+{
+    width:60px;
+    height:60px;
+    background-repeat:no-repeat;
+    background-image:url(../img/abajo.svg);
+    background-size:100% 100%;
+    position:absolute;
+    bottom:15%;
+    left:48%;
+    z-index:1000;
+    animation:canbio 2s infinite;
+    -webkit-animation:canbio 2s infinite;
+    -o-animation:canbio 2s infinite;
+    -moz-animation:canbio 2s infinite
+}
+.abajo-blackfriday
+{
+    width:60px;
+    height:60px;
+    background-repeat:no-repeat;
+    background-image:url(../img/abajo-blackfriday.svg);
+    background-size:100% 100%;
+    position:absolute;
+    bottom:15%;
+    left:48%;
+    z-index:1000;
+    animation:canbio 2s infinite;
+    -webkit-animation:canbio 2s infinite;
+    -o-animation:canbio 2s infinite;
+    -moz-animation:canbio 2s infinite
+}
+
+.abajomonitoreo
+{
+    background-image:url(../img/abajo.svg);
+    background-size:100% 100%;
+    width:50px;
+    height:50px;
+    background-repeat:no-repeat;
+    position:absolute;
+    bottom:5%;
+    left:50%;
+    z-index:1000;
+    animation:canbio 2s infinite;
+    -webkit-animation:canbio 2s infinite;
+    -o-animation:canbio 2s infinite;
+    -moz-animation:canbio 2s infinite
+}
+
+.content-monitoreo-de-alarmas
+{
+    width:100%;
+    float:left;
+    text-align:center
+}
+
+.monitoreo-uno
+{
+    width:80%;
+    margin:0 10%;
+    height:400px
+}
+
+.monitoreo-uno h1
+{
+    font-size:3em;
+    color:orange;
+    width:80%;
+    margin:100px 10% 0;
+    text-shadow:-5px 5px 5px rgba(0,0,0,0.1)
+}
+
+.monitoreo-dos
+{
+    width:100%;
+    float:left;
+    background-image:url(../img/bg-section.png);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    padding:0 10%;
+    height:1000px
+}
+
+.monitoreo-uno a
+{
+    text-align:center;
+    margin-top:30px
+}
+
+.monitoreo-dos h1
+{
+    width:40%;
+    color:#666;
+    text-shadow:5px 5px 5px rgba(0,0,0,0.2);
+    font-size:3.5em;
+    margin:10% 0 0;
+    text-align:left;
+    font-weight:700
+}
+
+.monitoreo-dos article
+{
+    width:40%;
+    margin:0 5%;
+    padding:0;
+    float:left
+}
+
+.monitoreo-dos article img
+{
+    float:left;
+    margin-top:10px
+}
+
+.monitoreo-dos article h4
+{
+    margin:10% 0 0;
+    text-align:left;
+    width:100%;
+    float:left;
+    font-size:1em
+}
+
+.monitoreo-dos article p
+{
+    font-family:'Titillium Web',sans-serif;
+    font-size:1.2em;
+    font-weight:100;
+    text-align:left;
+    margin:0;
+    padding:0;
+    width:100%;
+    display:block
+}
+
+.icon-monitoreo
+{
+    width:100%;
+    float:left
+}
+
+.icon-monitoreo img
+{
+    height:85px;
+    max-width:90px;
+    margin:0 10px
+}
+
+.monitoreo-tres
+{
+    width:80%;
+    margin:0 10%;
+    float:left
+}
+
+.monitoreo-tres img
+{
+    width:30%!important;
+    margin:0 0 0 10%;
+    float:left
+}
+
+.monitoreo-tres p
+{
+    width:20%!important;
+    margin:20% 0 0 10% !important;
+    text-align:left!important;
+    font-size:1.2em;
+    font-family:'Titillium Web',sans-serif;
+    font-weight:100
+}
+
+.seccion-rastreo
+{
+    width:100%;
+    float:left
+}
+
+.zona1
+{
+    position:relative;
+    width:100%;
+    float:left;
+    height:555px;
+    background-color:#E4E9F2
+}
+
+.zona1 h2
+{
+    width:40%;
+    float:left;
+    font-size:4em;
+    text-align:left;
+    margin:8% 5% 0;
+    text-shadow:-5px 5px 5px rgba(0,0,0,0.2)
+}
+
+.zona1 img
+{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:initial!important
+}
+
+.zona2
+{
+    position:relative;
+    width:100%;
+    float:left;
+    height:800px;
+    background-color:#F2F2F2
+}
+
+.zona2 img
+{
+    height:100%;
+    width:initial!important;
+    margin:0 30%!important
+}
+
+.zona2 h2
+{
+    position:absolute;
+    top:300px;
+    left:5%;
+    margin:0;
+    padding:0;
+    color:#666;
+    font-size:4em;
+    text-shadow:-5px 5px 5px rgba(0,0,0,0.2)
+}
+
+.zona2 p
+{
+    position:absolute;
+    bottom:18%;
+    right:3%;
+    font-weight:100;
+    font-size:1.7em;
+    text-align:left;
+    width:30%!important;
+    margin:0!important
+}
+
+.zona3
+{
+    position:relative;
+    float:left;
+    height:1068px;
+    width:100%
+}
+
+.zona3 img
+{
+    position:absolute;
+    width:initial!important;
+    margin:0!important;
+    height:340px
+}
+
+.zona3 img:nth-child(1)
+{
+    left:0;
+    top:420px
+}
+
+.zona3 img:nth-child(2)
+{
+    left:15%;
+    top:180px
+}
+
+.zona3 img:nth-child(3)
+{
+    left:30%
+}
+
+.zona3 img:nth-child(4)
+{
+    left:50%
+}
+
+.zona3 img:nth-child(5)
+{
+    left:65%;
+    top:180px
+}
+
+.zona3 img:nth-child(6)
+{
+    left:80%;
+    top:423px
+}
+
+.satelite
+{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    left:0;
+    margin:0!important;
+    background-repeat:no-repeat;
+    height:730px;
+    background-image:url(../img/rastreo-satelite.png);
+    background-size:100% auto
+}
+
+.zona4
+{
+    width:80%;
+    float:left;
+    margin:20px 10% 0
+}
+
+.zona4 h2
+{
+    width:60%;
+    margin:0 20%;
+    float:left;
+    text-align:center;
+    font-size:4em
+}
+
+.zona4 p
+{
+    font-size:1.2em;
+    text-align:left;
+    font-weight:100
+}
+
+.zona5
+{
+    width:100%;
+    float:left;
+    background-image:url(../img/bg-equipo-rastreo.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    height:670px
+}
+
+.zona5 img
+{
+    width:initial!important;
+    margin:100px 0 0!important;
+    left:5%
+}
+
+.equipos-rastreo
+{
+    width:50%;
+    float:right;
+    margin:150px 0 0
+}
+
+.equipos-rastreo h2
+{
+    width:80%;
+    float:left;
+    margin:0 10%;
+    font-size:4em;
+    font-weight:700;
+    text-align:left
+}
+
+.equipos-rastreo h2 strong
+{
+    font-weight:100
+}
+
+.equipos-rastreo p
+{
+    font-size:1.2em;
+    text-align:left;
+    width:80%!important;
+    margin:0 10%!important;
+    font-weight:100
+}
+
+.icon-productos,.icon-beneficios,.icon-supervision
+{
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:60px;
+    height:60px;
+    margin:0 0 0 30px
+}
+
+.md-content nav ul button
+{
+    background:rgba(255,255,255,0.2);
+    box-shadow:none;
+    color:#FFF;
+    border:none;
+    height:100%;
+    position:absolute;
+    top:0;
+    font-size:1.4em;
+    font-weight:100;
+    right:0;
+    z-index:999999;
+    width:100px;
+    margin:0;
+    border-radius:0
+}
+
+.slide-monitoreo
+{
+    width:100%;
+    float:left;
+    position:relative
+}
+
+.rastreo-tooltip
+{
+    top:56.5%;
+    left:72%;
+    z-index:1!important
+}
+
+.televideo-tooltip
+{
+    top:39%;
+    left:37%;
+    z-index:99999!important
+}
+
+.zona1 h2
+{
+    width:40%;
+    float:left;
+    font-size:6em;
+    text-align:center;
+    margin:8% 15% 0;
+    text-shadow:-5px 5px 5px rgba(0,0,0,0.2)
+}
+
+.cortina
+{
+    width:100%;
+    height:1px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:99999999;
+    text-align:center;
+    vertical-align:middle;
+    display:none
+}
+
+.cortina .logocortina
+{
+    display:block;
+    position:absolute;
+    width:20%;
+    height:7%;
+    left:40%
+}
+
+.cortina .texto
+{
+    font-size:4em;
+    font-style:italic;
+    font-family:Arial!important;
+    margin:auto;
+    color:#FFF;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    font-weight:700
+}
+
+.efecto-fijo
+{
+    position:relative;
+    left:55%;
+    top:38%;
+    width:50px;
+    height:50px
+}
+
+.tooltip.infrarrojo
+{
+    top:39%;
+    left:65%
+}
+
+.tooltip.magnetico
+{
+    top:52%;
+    left:53%
+}
+
+.tooltip.tecladotol
+{
+    top:70%;
+    left:51%
+}
+
+.tooltip.sensor-humo
+{
+    top:57%;
+    right:13%
+}
+
+.tooltip.btn-panico
+{
+    top:61%;
+    left:67.5%
+}
+
+.tooltip.sirena-cosina
+{
+    top:42%;
+    left:49%
+}
+
+.tooltip.radio
+{
+    top:40%;
+    left:74.5%
+}
+
+.tooltip.vibrosensor
+{
+    top:62%;
+    left:45%
+}
+
+.tooltip-content img
+{
+    margin-bottom:40px;
+    width:100%
+}
+
+.tooltip-content span
+{
+    position:absolute;
+    color:#000;
+    left:0;
+    font-size:1.3em;
+    bottom:0;
+    width:100%;
+    padding:10px 0;
+    float:left
+}
+
+.icon-productos,.icon-beneficios,.icon-supervision
+{
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:50px;
+    height:50px;
+    margin:0
+}
+
+.slide
+{
+    width:100%;
+    float:left
+}
+
+.dos-monitoreo
+{
+    padding:0 5%;
+    width:100%;
+    float:left;
+    position:relative
+}
+
+.dos-monitoreo article img
+{
+    float:left;
+    width:10%
+}
+
+.dos-monitoreo article p
+{
+    float:left;
+    width:85%;
+    margin-left:5%;
+    font-weight:100;
+    font-size:1.4em;
+    text-align:justify
+}
+
+.dos-monitoreo article p span
+{
+    font-weight:300
+}
+
+.tres-monitoreo
+{
+    width:100%;
+    float:left;
+    padding:20px
+}
+
+.tres-monitoreo p
+{
+    width:40%;
+    margin-top:10%;
+    margin-right:25%;
+    float:right;
+    text-align:justify;
+    font-weight:100;
+    font-size:1.5em
+}
+
+.tres-monitoreo img
+{
+    margin-left:20%
+}
+
+.monitoreo-casa,.monitoreo-empresa
+{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1
+}
+
+.casa
+{
+    height:900px;
+    width:100%;
+    float:left;
+    position:relative;
+    margin-top:52px;
+    overflow:hidden
+}
+
+.empresa
+{
+    height:900px;
+    width:100%;
+    float:left;
+    position:relative;
+    margin-top:80px;
+    overflow:hidden
+}
+
+.casa h2,.empresa h2,#bg-fabrica h2,#bg-apartamento h2
+{
+    width:22%;
+    top:30%;
+    left:3%;
+    text-shadow:-5px 5px 5px rgba(0,0,0,0.3);
+    letter-spacing:1px;
+    text-align:left;
+    font-size:3.7em;
+    color:#333;
+    position:absolute;
+    font-weight:200;
+    line-height:normal
+}
+
+.menu
+{
+    text-align:center;
+    background:#292a58!important
+}
+
+.navbar-inverse
+{
+    border-color:#f8e300!important
+}
+
+.navbar-nav
+{
+    float:initial!important;
+    margin:0 auto
+}
+
+.navbar-nav>li
+{
+    display:inline-block!important;
+    float:initial!important;
+    margin:0 8px
+}
+
+.navbar-nav>li>a
+{
+    font-size:14px;
+    font-weight:200;
+    white-space:nowrap;
+    letter-spacing:2px;
+    font-style:italic;
+    color:rgba(255,255,255,1)
+}
+
+.navbar-inverse .navbar-nav>li>a:hover
+{
+    color:rgba(255,255,255,0.7)
+}
+
+.content
+{
+    width:1400px;
+    margin:0 auto
+}
+
+.section
+{
+    width:100%;
+    float:left;
+    height:900px;
+    position:relative
+}
+
+#bg-zero,#bg-two
+{
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    background-position:center
+}
+
+.texto-informativo
+{
+    font-size:2em;
+    width:100%;
+    float:left;
+    font-weight:200;
+    letter-spacing:1px;
+    text-align:left;
+    margin:0
+}
+
+.titulo-one,.titulo-zero
+{
+    width:100%;
+    float:left;
+    text-align:left;
+    font-size:45px;
+    color:rgba(0,0,0,1);
+    margin:0;
+    letter-spacing:1px;
+    font-weight:600;
+    -moz-animation:ingresar 5s;
+    -webkit-animation:ingresar 5s;
+    -o-animation:ingresar 5s;
+    animation:ingresar 5s
+}
+
+.vermas
+{
+    width:100%;
+    float:left;
+    text-align:left;
+    font-size:2em;
+    margin-top:0;
+    letter-spacing:1px;
+    color:#253578;
+    font-weight:200
+}
+
+.vermas:hover
+{
+    cursor:pointer;
+    text-decoration:underline
+}
+
+.mtimagen
+{
+    width:100%;
+    height:100%
+}
+
+.monitoreo-casa
+{
+    width:100%;
+    height:100%
+}
+
+.monitoreo-casa img
+{
+    width:100%;
+    height:100%;
+    float:left
+}
+
+.monitoreo-empresa
+{
+    width:100%;
+    height:100%
+}
+
+.monitoreo-empresa img
+{
+    width:100%;
+    height:100%;
+    float:left
+}
+
+.img-logo
+{
+    position:absolute
+}
+
+.titulo-rastreo
+{
+    top:280px
+}
+
+.titulo-rastreo h2
+{
+    font-size:3.9em;
+    font-weight:700
+}
+
+#rastreo-2
+{
+    background-image:url(img/rastreo/pista.png);
+    background-position:center;
+    background-size:auto 100%
+}
+
+-televiu
+{
+    background-image:url(../img/bg-televiu.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:600px;
+    height:600px;
+    float:left
+}
+
+.bg-moto
+{
+    background-image:url(../img/bg-moto.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:600px;
+    height:600px;
+    float:left
+}
+
+.textelevideo
+{
+    font-size:2em!important;
+    width:100%;
+    font-weight:100!important;
+    letter-spacing:1px;
+    text-align:left;
+    margin:300px 0 0
+}
+
+.titulo-mostrar
+{
+    display:none
+}
+
+.click
+{
+    position:relative!important;
+    width:auto!important;
+    height:auto!important;
+    cursor:pointer;
+    font-size:1em;
+    color:rgba(255,0,0,1)
+}
+
+.televideo-tooltip-1 .tooltip-content img,.televideo-tooltip-2 .tooltip-content img,.televideo-tooltip-3 .tooltip-content img,.televideo-tooltip-4 .tooltip-content img,.televideo-tooltip-5 .tooltip-content img,.televideo-tooltip-6 .tooltip-content img,.televideo-tooltip-7 .tooltip-content img
+{
+    width:100%
+}
+
+#rastreo2
+{
+    background-image:url(../img/bg-rastreo-2.png);
+    background-size:auto 72%;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative
+}
+
+.titulo-rastreo-2
+{
+    position:absolute;
+    top:356px;
+    left:0;
+    font-size:4.8em;
+    font-weight:700
+}
+
+.texto-rastreo
+{
+    position:absolute;
+    top:500px;
+    width:20%;
+    text-align:left;
+    font-size:1.6em;
+    right:7%;
+    font-weight:200
+}
+
+#rastreo3 .col-md-12 h2,#rastreo4 .col-md-12 h2
+{
+    font-size:4em;
+    width:70%;
+    margin:auto;
+    margin-top:100px;
+    font-weight:700
+}
+
+#rastreo4 .col-md-12 ul
+{
+    width:100%;
+    float:left
+}
+
+#rastreo4 .col-md-12 ul li
+{
+    list-style-type:none;
+    width:60%;
+    margin:20px 20%;
+    float:left;
+    text-align:left;
+    font-size:1.5em;
+    font-weight:200;
+    color:rgba(0,0,0,0.7)
+}
+
+.bg-televideo-fabrica
+{
+    background-image:url(../img/bg-televideo-fabrica-1.png);
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    width:90%;
+    float:left;
+    height:600px;
+    margin-top:250px
+}
+
+.bg-televiu
+{
+    background-image:url(../img/bg-televiu.png);
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    width:80%;
+    margin:0 10%;
+    background-position:top center;
+    float:left;
+    height:730px
+}
+
+.text-televiu
+{
+    position:absolute;
+    width:100%;
+    left:-40px;
+    top:300px
+}
+
+.text-televio-3
+{
+    position:absolute;
+    width:100%;
+    left:50px;
+    top:250px
+}
+
+.listado-rastreo
+{
+    list-style-type:none;
+    width:100%;
+    float:left;
+    margin-top:10%
+}
+
+.listado-rastreo li
+{
+    list-style-type:none;
+    width:100%;
+    float:left;
+    text-align:left;
+    font-size:1.5em;
+    font-weight:200;
+    margin:5px 0
+}
+
+.icon-ubicacion,.icon-encedido,.icon-crecorrido,.icon-reportes,.icon-rmovil,.icon-velocidad
+{
+    width:30px;
+    height:30px;
+    float:left;
+    margin:0 20px 0 0;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position:center
+}
+
+.icon-ubicacion
+{
+    background-image:url(../img/rastreo/icon-ubicacion.png)
+}
+
+.icon-encedido
+{
+    background-image:url(../img/rastreo/icon-encendido.png)
+}
+
+.icon-crecorrido
+{
+    background-image:url(../img/rastreo/icon-crecorrido.png)
+}
+
+.icon-reportes
+{
+    background-image:url(../img/rastreo/icon-reportes.png)
+}
+
+.icon-rmovil
+{
+    background-image:url(../img/rastreo/icon-rmovil.png)
+}
+
+.icon-velocidad
+{
+    background-image:url(../img/rastreo/icon-velocidad.png)
+}
+
+.ofertas1,.ofertas2,.ofertas3,.cali
+{
+    width:100%;
+    float:left;
+    margin-top:5%
+}
+
+#oferta1 h1
+{
+    margin-top:11%;
+    font-size:3em;
+    text-transform:uppercase;
+    font-weight:200;
+    text-shadow:5px 5px 5px rgba(0,0,0,0.3)
+}
+
+#oferta1 p
+{
+    width:100%;
+    float:left;
+    font-size:1.2em;
+    font-weight:100;
+    letter-spacing:1px
+}
+
+#oferta1 p strong
+{
+    font-size:3em;
+    color:#29337F
+}
+
+.img-oferta1
+{
+    background-image:url(../img/oferta1.png);
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+    background-position:center;
+    width:100%;
+    float:left;
+    height:300px
+}
+
+.ofert
+{
+    font-size:1.6em!important;
+    color:#253578!important;
+    font-weight:700!important;
+    text-shadow:5px 5px 5px rgba(0,0,0,0.3)!important
+}
+
+.img-oferta3
+{
+    background-image:url(../img/oferta3.jpg);
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    width:100%;
+    float:left;
+    height:1080px
+}
+
+.img-cali
+{
+    background-image:url(../img/cali.jpg);
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    width:100%;
+    float:left;
+    height:1080px
+}
+
+.text-cali
+{
+    margin:20% 0 0
+}
+
+#coverflow
+{
+    top:100px
+}
+
+.oferta-cali1,.oferta-cali2,.oferta-cali3
+{
+    height:500px;
+    width:271px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position:center
+}
+
+.oferta-cali1
+{
+    background-image:url(../img/galery/oferta1.png)
+}
+
+.oferta-cali2
+{
+    background-image:url(../img/galery/oferta2.png)
+}
+
+.oferta-cali3
+{
+    background-image:url(../img/galery/oferta3.png)
+}
+
+.conocer-mas
+{
+    width:100%;
+    height:50px;
+    position:absolute;
+    left:0;
+    bottom:0
+}
+
+.oferta-a,.oferta-b,.oferta-c
+{
+    height:500px;
+    width:271px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position:center
+}
+
+.oferta-a
+{
+    background-image:url(../img/galery/oferta5.png)
+}
+
+.oferta-b
+{
+    background-image:url(../img/galery/oferta4.png)
+}
+
+.oferta-c
+{
+    background-image:url(../img/galery/oferta6.png)
+}
+
+.titulo-all-ofert
+{
+    top:100px;
+    position:relative;
+    font-size:5em;
+    font-weight:100;
+    line-height:41px;
+    letter-spacing:15px
+}
+
+.bg-medellin,.bg-bucaramanga,.bg-villavicencio,.bg-barranquilla,.bg-girardot,.bg-valledupar,.bg-tunja,.bg-alianza,.bg-gracias,.bg-sensorlunar,.bg-cali,.bg-discriminador,.bg-sirena,.bg-magneticos,.bg-sensor-doble-tecnologia,.bg-sensor-humo,.bg-radio,.bg-barreras-fotoelectricas,.bg-sensor-exterior,.plan-referido-telesentinel,.bg-boton-panico,.bg-camara-domo,.bg-teclado,.bg-camara-infrarrojo,.bg-magnetico-metalico,.bg-rastreo-ab
+{
+    width:100%;
+    float:left;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    background-position:center;
+    margin:10% 0 0;
+    height:700px
+}
+
+.bg-cali
+{
+    background-image:url(../img/bg-cali.png);
+    background-size:auto 100%
+}
+
+.bg-medellin
+{
+    background-image:url(../img/bg-medellin.png)
+}
+
+.bg-bucaramanga
+{
+    background-image:url(../img/bg-bucaramanga.png)
+}
+
+.bg-villavicencio
+{
+    background-image:url(../img/bg-villavicencio.png)
+}
+
+.bg-barranquilla
+{
+    background-image:url(../img/bg-barranquilla.png)
+}
+
+.bg-girardot
+{
+    background-image:url(../img/bg-girardot.png)
+}
+
+.bg-valledupar
+{
+    background-image:url(../img/bg-valledupar.png)
+}
+
+.bg-tunja
+{
+    background-image:url(../img/bg-tunja.png)
+}
+
+.bg-alianza
+{
+    background-image:url(../img/bg-alianza.png)
+}
+
+.bg-gracias
+{
+    background-image:url(../img/bg-gracias.png)
+}
+
+.bg-sensorlunar
+{
+    background-image:url(../img/equipos/bg-sensorlunar.png)
+}
+
+.bg-discriminador
+{
+    background-image:url(../img/equipos/bg-discriminador-audio.png)
+}
+
+.bg-sirena
+{
+    background-image:url(../img/equipos/bg-sirena.png)
+}
+
+.bg-magneticos
+{
+    background-image:url(../img/equipos/bg-magneticos.png)
+}
+
+.bg-sensor-doble-tecnologia
+{
+    background-image:url(../img/equipos/bg-sensordobletecnologia.png)
+}
+
+.bg-sensor-humo
+{
+    background-image:url(../img/equipos/bg-sensor-humo.png)
+}
+
+.bg-radio
+{
+    background-image:url(../img/equipos/bg-radio.png)
+}
+
+.bg-barreras-fotoelectricas
+{
+    background-image:url(../img/equipos/bg-barreras-fotoelectricas.png)
+}
+
+.bg-sensor-exterior
+{
+    background-image:url(../img/equipos/sensor-exterior.png)
+}
+
+.bg-teclado
+{
+    background-image:url(../img/equipos/bg-teclado.png)
+}
+
+.bg-camara-infrarrojo
+{
+    background-image:url(../img/equipos/bg-camara-con-infrarrojo.png)
+}
+
+.bg-camara-domo
+{
+    background-image:url(../img/equipos/bg-camara-domo-telesentinel.png)
+}
+
+.bg-magnetico-metalico
+{
+    background-image:url(../img/equipos/bg-magnetico-metalico.png)
+}
+
+.plan-referido-telesentinel
+{
+    background-image:url(../img/plan-referido-telesentinel.png)
+}
+
+.bg-boton-panico
+{
+    background-image:url(../img/equipos/bg-boton-panico.png)
+}
+
+.bg-rastreo-ab
+{
+    background-image:url(../img/bg-rastreo-ab.png)
+}
+
+.text-cali > .titulo-one
+{
+    font-size:38px
+}
+
+.telefonos
+{
+    width:100%;
+    float:left;
+    text-align:left;
+    font-size:1.8em;
+    font-weight:200;
+    margin-top:120px;
+    color:#253578;
+    list-style-type:none
+}
+
+.telefonos li
+{
+    text-align:left;
+    font-size:.6em;
+    font-weight:200;
+    margin:10px
+}
+
+.titulo-sitemap
+{
+    width:100%;
+    float:left;
+    margin:5% 0 0;
+    text-align:left;
+    padding-bottom:5px;
+    font-size:2em;
+    font-weight:100;
+    color:rgba(0,25,130,1);
+    border-bottom:1px solid rgba(0,25,130,0.2)
+}
+
+.titulo-sitemap a
+{
+    color:rgba(0,25,130,1)
+}
+
+.titulo-sitemap:nth-child(1)
+{
+    margin:10% 0 0
+}
+
+.subtitulo-sitemap
+{
+    width:100%;
+    float:left;
+    text-align:left;
+    font-size:1.5em;
+    font-weight:400;
+    margin-top:50px
+}
+
+#sitemap ul
+{
+    width:100%;
+    float:left;
+    margin:0;
+    padding:0
+}
+
+#sitemap ul li
+{
+    width:100%;
+    float:left;
+    margin:10px 0;
+    padding:0;
+    list-style-type:none
+}
+
+#sitemap ul li a
+{
+    color:rgba(0,0,0,0.8);
+    font-size:1.3em;
+    text-align:left;
+    font-weight:200;
+    width:100%;
+    float:left
+}
+
+footer
+{
+    width:80%;
+    margin:0 10%;
+    overflow:auto;
+    position:relative;
+    float:left
+}
+
+#formContacto
+{
+    width:100%;
+    float:left
+}
+
+#formContacto h1
+{
+    color:rgba(45,50,150,1);
+    width:100%;
+    float:left;
+    font-size:7em;
+    text-align:left;
+    font-weight:100;
+    text-transform:capitalize
+}
+
+#formContacto form
+{
+    width:70%;
+    float:right
+}
+
+#formContacto form input
+{
+    font-family:inherit;
+    font-size:inherit;
+    line-height:inherit;
+    border-radius:5px;
+    font-weight:100;
+    margin:10px 0;
+    font-size:1em;
+    padding:5px 10px;
+    border:1px solid rgba(0,0,0,0.5);
+    width:100%
+}
+
+#formContacto form input[type="text"]
+{
+    width:45%;
+    float:left;
+    margin-right:5%;
+    box-shadow:none
+}
+
+#formContacto form input[type="email"]
+{
+    width:50%;
+    float:left
+}
+
+#formContacto form input[type="tel"]
+{
+    width:100%;
+    float:left
+}
+
+#formContacto form select
+{
+    width:100%;
+    float:left;
+    height:30px;
+    margin-bottom:10px;
+    background:transparent
+}
+
+#formContacto form input[type="submit"]
+{
+    width:100%;
+    border:none;
+    background:rgba(45,50,145,1);
+    color:rgba(255,255,255,1);
+    font-size:1.6em;
+    font-weight:700;
+    border-radius:5px
+}
+
+.footer-nav
+{
+    height:320px;
+    background-image:url(../img/bg-fotter.png);
+    background-size:100% 100%;
+    position:relative
+}
+
+.footer-nav .col-md-6
+{
+    margin-top:3%
+}
+
+.footer-nav h3
+{
+    color:rgba(255,255,255,1);
+    text-transform:uppercase;
+    font-weight:700
+}
+
+.footer-nav ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0
+}
+
+.footer-nav ul li a
+{
+    list-style-type:none;
+    color:rgba(255,255,255,1);
+    font-size:1.2em;
+    font-weight:100;
+    position:relative
+}
+
+.margen-telefonos
+{
+    margin-top:9%
+}
+
+.footer-nav ul li
+{
+    margin:10px 0
+}
+
+.footer-nav div a img
+{
+    width:50px
+}
+
+.datos-contacto
+{
+    margin-top:100px
+}
+
+.nav-footer
+{
+    border-right:1px solid rgba(255,255,255,1)
+}
+
+.derechos-reservados
+{
+    position:absolute!important;
+    bottom:0;
+    margin:0 0 10px;
+    padding:0
+}
+
+.derechos-reservados p
+{
+    color:#fff;
+    margin:0;
+    padding:0;
+    font-size:1.2em;
+    font-weight:100
+}
+
+.menu-desplegable
+{
+    background:rgba(248,227,0,1)!important;
+    padding:0!important
+}
+
+.menu-desplegable li a
+{
+    padding:15px!important;
+    font-weight:200!important;
+    letter-spacing:2px;
+    color:rgba(0,0,0,1)!important;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    min-width:250px
+}
+
+.menu-desplegable li a:hover
+{
+    color:rgba(255,255,255,1)!important;
+    font-weight:200!important;
+    background:#29337f!important
+}
+
+.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:focus,.navbar-inverse .navbar-nav>.open>a:hover
+{
+    background:rgba(248,227,0,1)!important;
+    color:#000!important
+}
+
+.hometooltip1,.hometooltip2,.hometooltip3,.hometooltip4,.hometooltip5
+{
+    padding:20px
+}
+
+.icon-pse
+{
+    background-image:url(../img/icon-menu-monitoreo/icon-pse.png);
+    background-repeat:no-repeat;
+    width:30px;
+    height:30px;
+    background-size:100% 100%;
+    float:left;
+    margin:0 10px 0 0
+}
+
+.icon-pse-footer
+{
+    background-image:url(../img/icon-menu-monitoreo/icon-pse.png);
+    background-repeat:no-repeat;
+    width:30px;
+    height:30px;
+    background-size:100% 100%;
+    margin:0 10px 0 0;
+    position:absolute;
+    left:-35%
+}
+
+.logo-feria-hogar
+{
+    background-image:url(../img/LogoFeriaDelHogarBogota.png);
+    background-repeat:no-repeat;
+    width:360px;
+    height:113px;
+    position:absolute;
+    right:0;
+    top:35%
+}
+
+.monitoreo-zero-tooltip a,.televideo-zero-tooltip a,.rastreo-zero-tooltipp a
+{
+    width:50px;
+    height:50px;
+    position:absolute
+}
+
+.error-404
+{
+    width:100%;
+    float:left;
+    height:1000px;
+    background:#2e3183;
+    background:-moz-radial-gradient(center,ellipse cover,#2e3183 0%,#292a58 100%);
+    background:-webkit-radial-gradient(center,ellipse cover,#2e3183 0%,#292a58 100%);
+    background:radial-gradient(ellipse at center,#2e3183 0%,#292a58 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e3183',endColorstr='#292a58',GradientType=1)
+}
+
+.fondo-icons
+{
+    width:100%;
+    float:left;
+    height:100%;
+    background-image:url(../img/bg-icons.png);
+    background-size:100% auto;
+    text-align:center
+}
+
+.fondo-icons img
+{
+    width:70%;
+    margin:0 auto
+}
+
+.link-pagina-principal
+{
+    width:20%;
+    position:absolute;
+    padding:10px 0 0;
+    font-weight:200;
+    letter-spacing:1px;
+    font-size:1.4em;
+    height:50px;
+    text-align:center;
+    color:#000;
+    background-color:orange;
+    border-radius:5px;
+    bottom:80px;
+    left:40%
+}
+
+.link-pagina-principal:hover
+{
+    color:rgba(255,255,255,1)
+}
+
+.link-pagina-principal i
+{
+    margin-left:10px
+}
+
+.condiciones
+{
+    width:100%;
+    float:left;
+    text-align:left;
+    font-size:1.2em;
+    font-weight:700
+}
+
+.link-contacto
+{
+    float:left;
+    width:100%;
+    text-align:center;
+    font-size:2.5em;
+    background:#29337F;
+    border-radius:10px;
+    padding:5px 0;
+    color:#FFf;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+    font-weight:100
+}
+
+.link-contacto:hover
+{
+    color:#FFF
+}
+
+.activo
+{
+    background:rgba(248,227,0,1)
+}
+
+.activo a
+{
+    color:#000!important
+}
+
+.activo a:hover
+{
+    color:#000!important
+}
+
+.contac-busqueda
+{
+    margin-top:26%!important
+}
+
+.text-busqueda
+{
+    position:absolute;
+    top:262px;
+    font-size:2em!important;
+    text-align:left;
+    width:250px!important;
+    font-weight:300!important
+}
+
+.img-busqueda
+{
+    width:86%;
+    margin-top:24%;
+    float:right
+}
+
+.info-domo
+{
+    margin-top:20%;
+    font-family:'Open Sans','OpenSans-Light'
+}
+
+.info-domo h2
+{
+    font-size:4em;
+    color:#292A58;
+    font-weight:700
+}
+
+.info-domo p
+{
+    font-size:1.7em;
+    font-weight:100;
+    letter-spacing:1px;
+    width:80%;
+    margin:0 10%
+}
+
+.info-domo a
+{
+    text-align:center
+}
+
+.text-equipos
+{
+    margin-top:18%
+}
+
+.bg-moto-home
+{
+    height:190px;
+    overflow:hidden;
+    position:absolute;
+    top:56%;
+    left:26%
+}
+
+.bg-moto-home img
+{
+    height:100%
+}
+
+#promo-girardot
+{
+    margin-top:10%;
+    text-align:left
+}
+
+.img-reinado
+{
+    width:100%
+}
+
+#promo-girardot h1
+{
+    font-size:5em;
+    font-weight:700;
+    color:rgba(0,50,130,1)
+}
+
+p.fecha-promo
+{
+    font-size:3em;
+    font-weight:400;
+    color:rgba(220,150,0,1);
+    line-height:35px
+}
+
+p.fecha-promo span
+{
+    font-size:.7em;
+    font-weight:100;
+    letter-spacing:1px
+}
+
+img.img-kit-basico
+{
+    width:100%
+}
+
+#promo-girardot h2
+{
+    font-size:4em;
+    font-weight:700;
+    color:rgba(114,113,118,1)
+}
+
+p.datos-kit-alarmas
+{
+    font-size:1.4em;
+    font-weight:100;
+    letter-spacing:1px
+}
+
+#promo-girardot .link-contacto
+{
+    width:50%;
+    margin-top:20px
+}
+
+.rastreo-one
+{
+    left:31.5%;
+    top:165px
+}
+
+.rastreo-two
+{
+    top:496px;
+    left:39%
+}
+
+.rastreo-one .tooltip-content
+{
+    background-color:rgba(255,255,255,1);
+    width:200px;
+    height:120px;
+    left:90px;
+    font-size:1em;
+    font-weight:100;
+    padding:10px!important
+}
+
+.rastreo-two .tooltip-content
+{
+    background-color:rgba(255,255,255,1);
+    width:200px;
+    height:90px;
+    left:100px;
+    font-size:1em;
+    font-weight:100;
+    padding:10px!important
+}
+
+#icon-ap
+{
+    height:100px;
+    width:100px;
+    background:url(../img/rastreo/icon-ap.png);
+    background-size:100% 100%;
+    box-shadow:none;
+    border:none;
+    border-radius:0;
+    left:0;
+    top:0;
+    margin:0
+}
+
+#icon-gs
+{
+    height:100px;
+    width:100px;
+    background:url(../img/rastreo/icon-gs.png);
+    background-size:100% 100%;
+    border:none!important;
+    box-shadow:none!important;
+    left:0;
+    top:0;
+    margin:0
+}
+
+.terminos
+{
+    width:100%;
+    float:left;
+    text-align:left;
+    margin:20px 0;
+    padding:0;
+    font-size:.9em;
+    font-weight:100
+}
+
+.terminos input
+{
+    width:auto!important;
+    float:left!important;
+    margin:2px 10px 0 0 !important;
+    padding:0!important
+}
+
+.g-recaptcha
+{
+    width:100%;
+    float:left
+}
+
+@-webkit-keyframes canbio {
+    0%
+    {
+        transform:scale(1.5,1.5)
+    }
+
+    50%
+    {
+        transform:scale(0.9,0.9)
+    }
+
+    100%
+    {
+        transform:scale(1.5,1.5)
+    }
+}
+
+@-moz-keyframes canbio {
+    0%
+    {
+        transform:scale(1,1)
+    }
+
+    50%
+    {
+        transform:scale(0.9,0.9)
+    }
+
+    100%
+    {
+        transform:scale(1,1)
+    }
+}
+
+@-o-keyframes canbio {
+    0%
+    {
+        transform:scale(1,1)
+    }
+
+    50%
+    {
+        transform:scale(0.9,0.9)
+    }
+
+    100%
+    {
+        transform:scale(1,1)
+    }
+}
+
+@-webkit-keyframes pulse {
+    from
+    {
+        -webkit-transform:scale3d(0.2,0.2,1)
+    }
+
+    to
+    {
+        -webkit-transform:scale3d(1,1,1)
+    }
+}
+
+@keyframes pulse {
+    from
+    {
+        -webkit-transform:scale3d(0.2,0.2,1);
+        transform:scale3d(0.2,0.2,1)
+    }
+
+    to
+    {
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1)
+    }
+}
+
+@-webkit-keyframes movcaruno {
+    0%
+    {
+        transform:translate(1600px,-800px) scale(0,0)
+    }
+
+    100%
+    {
+        transform:translate(0px,0px) scale(1.1,1.1)
+    }
+}
+
+@-moz-keyframes movcaruno {
+    0%
+    {
+        transform:translate(1600px,-800px) scale(0,0)
+    }
+
+    100%
+    {
+        transform:translate(0px,0px) scale(1.1,1.1)
+    }
+}
+
+@-o-keyframes movcaruno {
+    0%
+    {
+        transform:translate(1600px,-800px) scale(0,0)
+    }
+
+    100%
+    {
+        transform:translate(0px,0px) scale(1.1,1.1)
+    }
+}
+
+@-webkit-keyframes pulse {
+    from
+    {
+        -webkit-transform:scale3d(0.2,0.2,1)
+    }
+
+    to
+    {
+        -webkit-transform:scale3d(1,1,1)
+    }
+}
+
+@keyframes pulse {
+    from
+    {
+        -webkit-transform:scale3d(0.2,0.2,1);
+        transform:scale3d(0.2,0.2,1)
+    }
+
+    to
+    {
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1)
+    }
+}
+.negro{
+    background-color: #000;
+    width: 100% !important;
+    height: 990px;
+    background-image: url(../img/bg-black-friday.png);
+}
+.titulo-blackfriday{
+    color: #FFF;
+    margin:0;
+    font-size: 80px;
+}
+.texto-blackfriday{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0 30%;
+    width: 40%;
+    letter-spacing: 1px;
+}
+.blackfriday{
+    width: 100%;
+    float: left;
+}
+.blackfriday-img{
+    margin: 3% 0 0 0;
+}
