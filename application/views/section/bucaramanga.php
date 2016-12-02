@@ -31,17 +31,17 @@
                 <ul class="flip-items">
                     <li>
                         <figure class="oferta-cali1">
-                            <a href="javascript:scrollToScreen(3)" class="conocer-mas"></a>
+                            <a href="javascript:scrollToContacto();" class="conocer-mas"></a>
                         </figure>
                     </li>
                     <li>
                         <figure class="oferta-cali2">
-                            <a href="javascript:scrollToScreen(1)" class="conocer-mas"></a>
+                            <a href="javascript:scrollToContacto();" class="conocer-mas"></a>
                         </figure>
                     </li>
                     <li>
                         <figure class="oferta-cali3">
-                            <a href="javascript:scrollToScreen(4)" class="conocer-mas"></a>
+                            <a href="javascript:scrollToContacto();" class="conocer-mas"></a>
                         </figure>
                     </li>
                 </ul>
