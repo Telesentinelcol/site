@@ -387,8 +387,7 @@ function validarCheck()
 {
     if ($('#confcheck').prop('checked')) {
         $('#confirmacion').val(1);
-    }
-    else {
+    } else {
         $('#confirmacion').val(0);
     }
 }
