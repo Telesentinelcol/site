@@ -1635,7 +1635,7 @@ header
     letter-spacing:15px
 }
 
-.bg-medellin,.bg-bucaramanga,.bg-villavicencio,.bg-barranquilla,.bg-girardot,.bg-valledupar,.bg-tunja,.bg-alianza,.bg-gracias,.bg-sensorlunar,.bg-cali,.bg-discriminador,.bg-sirena,.bg-magneticos,.bg-sensor-doble-tecnologia,.bg-sensor-humo,.bg-radio,.bg-barreras-fotoelectricas,.bg-sensor-exterior,.plan-referido-telesentinel,.bg-boton-panico,.bg-camara-domo,.bg-teclado,.bg-camara-infrarrojo,.bg-magnetico-metalico,.bg-rastreo-ab
+.bg-medellin,.bg-bucaramanga,.bg-villavicencio,.bg-barranquilla,.bg-girardot,.bg-valledupar,.bg-tunja,.bg-alianza,.bg-gracias,.bg-sensorlunar,.bg-cali,.bg-discriminador,.bg-sirena,.bg-magneticos,.bg-sensor-doble-tecnologia,.bg-sensor-humo,.bg-radio,.bg-barreras-fotoelectricas,.bg-sensor-exterior,.bg-boton-panico,.bg-camara-domo,.bg-teclado,.bg-camara-infrarrojo,.bg-magnetico-metalico,.bg-rastreo-ab
 {
     width:100%;
     float:left;
@@ -1763,10 +1763,6 @@ header
     background-image:url(../img/equipos/bg-magnetico-metalico.png)
 }
 
-.plan-referido-telesentinel
-{
-    background-image:url(../img/plan-referido-telesentinel.png)
-}
 
 .bg-boton-panico
 {
@@ -2549,30 +2545,4 @@ p.datos-kit-alarmas
         -webkit-transform:scale3d(1,1,1);
         transform:scale3d(1,1,1)
     }
-}
-.negro{
-    background-color: #000;
-    width: 100% !important;
-    height: 990px;
-    background-image: url(../img/bg-black-friday.png);
-}
-.titulo-blackfriday{
-    color: #FFF;
-    margin:0;
-    font-size: 80px;
-}
-.texto-blackfriday{
-    color: #FFF;
-    font-size: 30px;
-    font-weight: 100;
-    margin: 0 30%;
-    width: 40%;
-    letter-spacing: 1px;
-}
-.blackfriday{
-    width: 100%;
-    float: left;
-}
-.blackfriday-img{
-    margin: 3% 0 0 0;
 }
