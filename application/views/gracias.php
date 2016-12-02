@@ -1,4 +1,4 @@
-<?php  $ruta = isset($rut) ? $rut : ''; ?>
+<?php $ruta = isset($rut) ? $rut : ''; ?>
 <script type="text/javascript" src="<?= $ruta ?>js/bootstrap/bootstrap.min.js"></script>
 <div class="content">
     <figure class="logotipo"></figure>

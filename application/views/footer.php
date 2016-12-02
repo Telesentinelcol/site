@@ -33,10 +33,10 @@
                 <li><a href="/web/index.php" target="_blank">Portal comercial web</a></li>
                 <li><a href="https://mail.telesentinel.com/" target="_blank">Correo institucional</a></li>
             </ul>
-            <a href="https://www.instagram.com/telesentinel_colombia/" target="_blank"><img src="<?= $ruta?>img/instagram.png" alt="Ingrese al Instagram de telesentinel"/></a>
-            <a href="https://www.youtube.com/channel/UC4rXZH9n3P29WJqaiQTTr_A" target="_blank"><img src="<?= $ruta?>img/youtube.png" alt="Ingrese al YouTube de telesentinel"/></a>
-            <a href="https://plus.google.com/u/0/102528538861567502805" target="_blank"><img src="<?= $ruta?>img/googleplus.png" alt="Ingrese al Google Plus de telesentinel"/></a>
-            <a href="https://www.facebook.com/MonitoreodeAlarmas/?ref=ts&fref=ts" target="_blank"><img src="<?= $ruta?>img/facebook.png" alt="Ingrese al Facebook de telesentinel"/></a>
+            <a href="https://www.instagram.com/telesentinel_colombia/" target="_blank"><img src="<?= $ruta ?>img/instagram.png" alt="Ingrese al Instagram de telesentinel"/></a>
+            <a href="https://www.youtube.com/channel/UC4rXZH9n3P29WJqaiQTTr_A" target="_blank"><img src="<?= $ruta ?>img/youtube.png" alt="Ingrese al YouTube de telesentinel"/></a>
+            <a href="https://plus.google.com/u/0/102528538861567502805" target="_blank"><img src="<?= $ruta ?>img/googleplus.png" alt="Ingrese al Google Plus de telesentinel"/></a>
+            <a href="https://www.facebook.com/MonitoreodeAlarmas/?ref=ts&fref=ts" target="_blank"><img src="<?= $ruta ?>img/facebook.png" alt="Ingrese al Facebook de telesentinel"/></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 derechos-reservados">
             <p class="lead">Vigilado Supervigilancia Resolución Nº20147200101617 de 26-11-2014 Telesentinel LTDA © 2015. Todos los Derechos Reservados.</p>

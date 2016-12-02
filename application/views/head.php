@@ -69,8 +69,7 @@
 
                 if (url[3] == 'telesentinel') {
                     section = url[4];
-                }
-                else {
+                } else {
                     section = url[3];
                 }
 
