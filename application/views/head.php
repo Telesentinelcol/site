@@ -154,9 +154,38 @@
             }(window, document, 'script',
                     'https://connect.facebook.net/en_US/fbevents.js');
 
-            fbq('init', '331665720529665');
+            fbq('init', '1200822526692076');
             fbq('track', 'PageView');
         </script>
-    <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=331665720529665&ev=PageView &noscript=1"/> </noscript>
+        <noscript>
+    <img height="1" width="1"
+         src="https://www.facebook.com/tr?id=1200822526692076&ev=PageView
+         &noscript=1"/>
+    </noscript>
     <!-- End Facebook Pixel Code -->
+    <!-- Google Code para etiquetas de remarketing -->
+    <!--------------------------------------------------
+    Es posible que las etiquetas de remarketing todavía no estén asociadas a la información de identificación personal o que estén en páginas relacionadas con las categorías delicadas. Para obtener más información e instrucciones sobre cómo configurar la etiqueta, consulte http://google.com/ads/remarketingsetup.
+    --------------------------------------------------->
+    <script type="text/javascript">
+        var google_tag_params = {
+            local_id: 'REPLACE_WITH_VALUE',
+            local_pagetype: 'REPLACE_WITH_VALUE',
+            local_totalvalue: 'REPLACE_WITH_VALUE',
+        };
+    </script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 934512678;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/934512678/?guid=ON&amp;script=0"/>
+    </div>
+    </noscript>
 </head>

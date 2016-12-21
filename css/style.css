@@ -2079,6 +2079,17 @@ footer
     position:absolute;
     left:-35%
 }
+.icon-qs-footer
+{
+    background-image:url(../img/icon-soporte-tele-qs.png);
+    background-repeat:no-repeat;
+    width:30px;
+    height:30px;
+    background-size:100% 100%;
+    margin:0 10px 0 0;
+    position:absolute;
+    left:-35%
+}
 
 .logo-feria-hogar
 {
@@ -2252,11 +2263,11 @@ footer
 
 .bg-moto-home
 {
-    height:190px;
+    height:240px;
     overflow:hidden;
     position:absolute;
-    top:56%;
-    left:26%
+    top:53%;
+    left:28%
 }
 
 .bg-moto-home img
