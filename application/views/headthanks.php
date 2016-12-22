@@ -30,7 +30,7 @@
         <script type="text/javascript" src="<?= $ruta ?>js/galery/galery.js"></script>
         <script type="text/javascript" src="<?= $ruta ?>js/head.js"></script>
         <script type="text/javascript" src="<?= $ruta ?>js/anim.js"></script>
-          <!--custom head HTML-->
+        <!--custom head HTML-->
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -87,7 +87,7 @@
             //Codigo para recibir los parametros para todos los formularios
 
             var origen = qs["origen"];
-            
+
             if (typeof origen === 'undefined' || origen === null || origen === "") {
                 origen = "registroseo";
             }
@@ -95,8 +95,7 @@
             if (origen === "facebook") {
                 fbq('init', '432588260284569');
                 fbq('track', "PageView");
-            }
-            else {
+            } else {
                 ga('create', 'UA-69057401-1', 'auto');
                 ga('send', 'pageview');
             }
