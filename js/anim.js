@@ -66,10 +66,10 @@ function animacioncasa() {
 }
 
 function animacionlogo() {
-    TweenLite.to('.img-logo', 2, {
+    TweenLite.to('.img-logo', 1, {
         left: '+=100',
-        height: '5%',
-        width: '5%'
+        height: '3%',
+        width: '3%'
     });
 }
 
@@ -387,8 +387,7 @@ function validarCheck()
 {
     if ($('#confcheck').prop('checked')) {
         $('#confirmacion').val(1);
-    }
-    else {
+    } else {
         $('#confirmacion').val(0);
     }
 }
