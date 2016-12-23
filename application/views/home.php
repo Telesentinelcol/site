@@ -2,7 +2,6 @@
 $section = isset($section) ? $section : '';
 $ini = isset($inicio) ? $inicio : ''; ?>
 <div class="content" itemscope itemtype ="http://schema.org/Product">
-    <figure class="logotipo"></figure>
     <section class="section animated fadeIn" id="bg-zero">
         <div class="dummy-pois">
             <div class="tooltip tooltip-east monitoreo-zero-tooltip md-trigger">
@@ -58,7 +57,6 @@ $ini = isset($inicio) ? $inicio : ''; ?>
                 </div>
             </div>
         </div>
-        <img class="ondasedificio" src="<?= $ruta ?>img/ondas.gif" alt="Transmisión de señal del servicio de televideo con telesentincel"/>
         <div class="info-text animated fadeInLeft">
             <a href="<?= $ini ?>televideo/">
                 <h2 class="titulo-one ti-televideo" itemprop="name">Televideo</h2>

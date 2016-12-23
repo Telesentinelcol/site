@@ -14,20 +14,23 @@ $ini = isset($inicio) ? $inicio : ''; ?>
             <ul class="nav navbar-nav" id="menu-activo">
                 <li id="icon-logo">
                     <a href="<?= $ini ?>">
-                        <img class="logo" itemprop="logo" src="<?= $ruta ?>img/logo-telesentinel.png" alt="Logotipo telesentinel"/>
+                        <img class="logo" itemprop="logo" title="Logo de telesentinel" src="<?= $ruta ?>img/logo-telesentinel.png" alt="Logotipo telesentinel"/>
                     </a>
                 </li>
                 <li class="dropdown">
-                    <a href="javascript:scrollToMonitoreo();" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">Monitoreo de Alarmas<span class="caret"></span></a>
+                    <a href="javascript:scrollToMonitoreo();" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-hover="dropdown"><img src="<?= $ruta ?>img/icon-menu/telemonitoreo.png" alt="icon-rastreo" title="icon-telemonitoreo"/><br>Telemonitoreo<span class="caret"></span></a>
                     <ul class="dropdown-menu menu-desplegable dropdownhover-bottom">
                         <li><a href="<?= $section ?>monitoreo/">Monitoreo de alarmas</a></li>
                         <li><a href="<?= $section ?>equipos/">Equipos de Monitoreo</a></li>
                         <li><a href="<?= $section ?>monitoreo/#beneficios">Beneficios de nuestro servicio</a></li>
                     </ul>
                 </li>
-                <li><a href="<?= $ini ?>#bg-two">Televideo</a></li>
-                <li><a href="<?= $ini ?>#bg-three">Rastreo Vehicular</a></li>
-                <li class="dropdown">
+                <li><a href="<?= $ini ?>#bg-two"> <img src="<?= $ruta ?>img/icon-menu/televideo.png" alt="icon-televideo" title="icon-televideo"/><br>Televideo</a></li>
+                <li><a href="<?= $ini ?>#bg-three"> <img src="<?= $ruta ?>img/icon-menu/telerastreo.png" alt="icon-rastreo" title="icon-telerastreo"/><br>Telerastreo</a></li>
+                <li class="icon-menu-pse"><a href="/pagoonline/" target="_blank"><img src="<?= $ruta ?>img/icon-menu/icon-pse.png" alt="icon-pse" title="icon-pse"/><br> Pague su factura</a></li>
+                <li><a href="javascript:scrollToContacto();"><img src="" alt="icon-contacto" title="icon-contacto"/><br>Contacto</a></li>
+                
+                <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ciudades<span class="caret"></span></a>
                     <ul class="dropdown-menu menu-desplegable">
                         <li><a href="<?= $section ?>barranquilla/">Barranquilla</a></li>
@@ -39,9 +42,9 @@ $ini = isset($inicio) ? $inicio : ''; ?>
                         <li><a href="<?= $section ?>valledupar/">Valledupar</a></li>
                         <li><a href="<?= $section ?>villavicencio/">Villavicencio</a></li>
                     </ul>
-                </li>
-                <li><a href="javascript:scrollToContacto();">Contacto</a></li>
-                <li class="dropdown">
+                </li>-->
+                
+                <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-list-ol" aria-hidden="true"></i><span class="caret"></span></a>
                     <ul class="dropdown-menu menu-desplegable">
@@ -53,7 +56,8 @@ $ini = isset($inicio) ? $inicio : ''; ?>
                         <li><a href="https://mail.telesentinel.com/" target="_blank">Correo institucional</a></li>
                         <li><a href="<?= $section ?>sitemap/">Mapa del sitio</a></li>
                     </ul>
-                </li>
+                </li>-->
+                
             </ul>
         </div>
     </div>

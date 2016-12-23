@@ -1126,14 +1126,12 @@ header
 .menu
 {
     text-align:center;
-    background:#292a58!important
+    background:#292a58 !important;
+    height:90px;
+	border-bottom:4px solid #F8E71C!important;
+	margin: 0;
+	padding: 0;
 }
-
-.navbar-inverse
-{
-    border-color:#f8e300!important
-}
-
 .navbar-nav
 {
     float:initial!important;
@@ -1144,7 +1142,7 @@ header
 {
     display:inline-block!important;
     float:initial!important;
-    margin:0 8px
+    margin:0 8px;
 }
 
 .navbar-nav>li>a
@@ -1154,12 +1152,23 @@ header
     white-space:nowrap;
     letter-spacing:2px;
     font-style:italic;
-    color:rgba(255,255,255,1)
+    color:rgba(255,255,255,1);
+	text-align: center;
+}
+.navbar-nav>li>a>img{
+	clear:both;
+	height: 40px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover
 {
     color:rgba(255,255,255,0.7)
+}
+.icon-menu-pse{
+	background-color:yellow;
+}
+.icon-menu-pse a{
+	color: #000 !important;
 }
 
 .content
