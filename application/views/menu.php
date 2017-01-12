@@ -2,7 +2,23 @@
 $section = isset($section) ? $section : '';
 $ini = isset($inicio) ? $inicio : ''; ?>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top menu">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li class="logo">
+                        <a href="<?= $ini ?>">
+                            <img src="<?= $ruta ?>img/logo-telesentinel.png" alt="Logotipo de telesentinel" title="Logotipo de telesentinel"/>
+                        </a>
+                    </li>
+                    <li><a href="<?= $section ?>"><figure class="icon-telemonitoreo"></figure>Telemonitoreo</a></li>
+                    <li><a href="<?= $ini ?>#bg-two"><figure class="icon-televideo"></figure>Televideo</a></li>
+                    <li><a href="<?= $ini ?>#bg-three"><figure class="icon-telerastreo"></figure>Telerastreo</a></li>
+                    <li class="pago-factura"><a href="/pagoonline/"><figure class="icon-pse"></figure>Pague su factura</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+<!--<nav class="navbar navbar-inverse navbar-fixed-top menu">
     <div class="container-fluid">
         <div class="navbar-header">
             <figure class="logo-cell"></figure>
@@ -30,7 +46,7 @@ $ini = isset($inicio) ? $inicio : ''; ?>
                 <li class="icon-menu-pse"><a href="/pagoonline/" target="_blank"><img src="<?= $ruta ?>img/icon-menu/icon-pse.png" alt="icon-pse" title="icon-pse"/><br> Pague su factura</a></li>
                 <li><a href="javascript:scrollToContacto();"><img src="" alt="icon-contacto" title="icon-contacto"/><br>Contacto</a></li>
                 
-                <!--<li class="dropdown">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ciudades<span class="caret"></span></a>
                     <ul class="dropdown-menu menu-desplegable">
                         <li><a href="<?= $section ?>barranquilla/">Barranquilla</a></li>
@@ -56,9 +72,8 @@ $ini = isset($inicio) ? $inicio : ''; ?>
                         <li><a href="https://mail.telesentinel.com/" target="_blank">Correo institucional</a></li>
                         <li><a href="<?= $section ?>sitemap/">Mapa del sitio</a></li>
                     </ul>
-                </li>-->
-                
+                </li>
             </ul>
         </div>
     </div>
-</nav>
+</nav>-->

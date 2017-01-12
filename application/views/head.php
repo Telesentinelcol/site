@@ -9,7 +9,7 @@
         <meta name="author" content="Telesentinel">
         <title>Telesentinel | Monitoreo de alarmas televideo y rastreo vehícular</title>
         <link rel="shortcut icon" href="<?= $ruta ?>img/favicon.ico"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
         <link href="<?= $ruta ?>css/style.css" rel="stylesheet" type="text/css"/>
         <link href="<?= $ruta ?>css/media.css" rel="stylesheet" type="text/css"/>
         <link href="<?= $ruta ?>css/animate.css" rel="stylesheet" type="text/css"/>
@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="<?= $ruta ?>css/bootstrap/bootstrap-theme.min.css">
         <link rel="stylesheet" href="<?= $ruta ?>css/sweetalert.css">
         <link rel="stylesheet" href="<?= $ruta ?>css/galery/galery.css">
+        <link rel="stylesheet" href="<?= $ruta ?>css/fullpages/jquery.fullPage.css">
 
         <script type="text/javascript" src="<?= $ruta ?>js/jquery.min.js"></script>
         <script type="text/javascript" src="<?= $ruta ?>js/bootstrap/bootstrap.min.js"></script>
@@ -31,6 +32,15 @@
         <script type="text/javascript" src="<?= $ruta ?>js/galery/galery.js"></script>
         <script type="text/javascript" src="<?= $ruta ?>js/head.js"></script>
         <script type="text/javascript" src="<?= $ruta ?>js/anim.js"></script>
+        <script type="text/javascript" src="<?= $ruta ?>js/fullpages/jquery.fullPage.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function() {
+                        $('#fullpage').fullpage({
+                                sectionsColor: ['#FFF', '#FFF', '#FFF'],
+                        css3: true
+                });
+                });
+        </script>
         <script type="text/javascript">
             var __lc = {};
             __lc.license = 5585211;
@@ -188,4 +198,5 @@
         <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/934512678/?guid=ON&amp;script=0"/>
     </div>
     </noscript>
+    
 </head>

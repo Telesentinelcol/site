@@ -1,4 +1,4 @@
-@font-face
+/*@font-face
 {
     font-family:"OpenSans-Light";
     src:url(open-sans/otf/OpenSans-Light.otf);
@@ -21,12 +21,8 @@ body
     text-align:center;
     font-family:'Open Sans','OpenSans-Light'
 }
-
-a
-{
-    text-decoration:none
-}
-
+*/
+/*----
 header
 {
     height:44px;
@@ -1128,9 +1124,9 @@ header
     text-align:center;
     background:#292a58 !important;
     height:90px;
-	border-bottom:4px solid #F8E71C!important;
-	margin: 0;
-	padding: 0;
+        border-bottom:4px solid #F8E71C!important;
+        margin: 0;
+        padding: 0;
 }
 .navbar-nav
 {
@@ -1153,11 +1149,11 @@ header
     letter-spacing:2px;
     font-style:italic;
     color:rgba(255,255,255,1);
-	text-align: center;
+        text-align: center;
 }
 .navbar-nav>li>a>img{
-	clear:both;
-	height: 40px;
+        clear:both;
+        height: 40px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover
@@ -1165,10 +1161,10 @@ header
     color:rgba(255,255,255,0.7)
 }
 .icon-menu-pse{
-	background-color:yellow;
+        background-color:yellow;
 }
 .icon-menu-pse a{
-	color: #000 !important;
+        color: #000 !important;
 }
 
 .content
@@ -2566,4 +2562,353 @@ p.datos-kit-alarmas
         -webkit-transform:scale3d(1,1,1);
         transform:scale3d(1,1,1)
     }
+}
+*/
+/*-----------------
+NUEVOS ESTILOS
+------------------*/
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    height:11.1%;
+    min-height: 86px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #002E82;
+    border-bottom: 4px solid #F8E71C;
+    z-index: 1;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+article{
+    height:100%;
+    width: 100%;
+    display: block;
+}
+.logo{
+    margin-right:40px;
+}
+
+.logo a img{
+    margin-top: 5%;
+
+}
+.menu{
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+.menu ul {
+    height: 100%;
+}
+.menu ul li{
+    margin: 0 2%;
+    height: 100%;
+    display: inline-block;
+}
+.menu ul li a{
+    float: left;
+    height: 100%;
+    color:#FFF;
+    font-family: "Josefin Sans";
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38.9%;
+    border-top:1px solid #333;
+    background-color: #FFF;
+    background-color: #FFF;
+    text-align: center;
+}
+.sub-content{
+    width:1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.prueba{
+    width:1200px;
+    top:11.1%;
+    margin: 0 auto;
+    height: 88.9%;
+    max-height: 768px;
+    min-height: 769px;
+    overflow: auto;
+    position: relative;
+}
+.prueba h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    font-size: 5em;
+    margin: 1% 0 0 0;
+    padding: 0;
+}
+.prueba img{
+    width: 100%;
+}
+
+.col-md-6{
+    width:50%;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.imgs-equipos{
+    height: 80%;
+    margin: 5% 0 15%;
+}
+.titulo-equipos, .descripcion-equipos, .link-contato{
+    font-family: "Josefin Sans";
+    width: 50%;
+    margin: 0 25%;
+    padding: 0;
+    float: left;
+    text-align: left;
+}
+.titulo-equipos{
+    margin-top:80px;
+    margin-bottom: 5px;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    color: #292A58;
+}
+.descripcion-equipos{
+    font-size: 1.1em;
+    font-weight:100;
+    color: #666;
+
+}
+.icon-telemonitoreo, .icon-televideo, .icon-telerastreo, .icon-pse{
+    width: 70px;
+    height: 50px;
+    margin: 5% auto 0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.icon-telemonitoreo{background-image:url(../img/icon-telemonitoreo.png);}
+.icon-televideo{background-image:url(../img/icon-televideo.png);}
+.icon-telerastreo{background-image:url(../img/icon-telerastreo.png);}
+.icon-pse{background-image:url(../img/icon-pse.png);}
+
+.pago-factura a{
+    background-color:#F8E71C;
+    color: #222 !important;
+    width: 130px;
+}
+.carousel-control.left, .carousel-control.right{
+    background: transparent;
+}
+.item, .carousel, .carousel-inner{
+    height: 100%;
+}
+
+.preloader, .preloader-a, .preloader-b, .preloader-c, .preloader-d, .preloader-e, .preloader-f, .preloader-g{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 50px;
+    animation: preloader_5 3.5s infinite linear;
+}
+.preloader, .preloader-a, .preloader-b, .preloader-c{
+    top: 54px;
+}
+.preloader-e, .preloader-g{
+    top: 402px;
+}
+.preloader-b, .preloader-f, .preloader-g {
+    left: 92%;
+}
+.preloader-c, .preloader-d, .preloader-e {
+    left: 30.7%;
+}
+.preloader{
+    left: 50.3%;
+}
+.preloader-a{
+    left: 62.5%;
+}
+.preloader-d{
+    top: 285px;
+}
+.preloader-f{
+    top: 238px;
+}
+
+.preloader:after, .preloader-a:after, .preloader-b:after, .preloader-c:after, .preloader-d:after, .preloader-e:after, .preloader-f:after, .preloader-g:after  {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-top: 2px dotted #EB7212;
+    border-bottom: 2px dotted #EB7212;
+    border-left: 2px dotted #EB7212;
+    border-right: 2px dotted #EB7212;
+    border-radius: 60px;
+    content: '';
+    top: -5px;
+    left: -5px;
+}
+
+@keyframes preloader_5 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+.opc{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 0.8em;
+    padding: 0px;
+    color: white;
+}
+
+
+.opc-big span{
+    font-size: 4em;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    display:block;
+    text-align:center;
+}
+
+.opc-big{
+    width: 86px;
+    height: 86px;
+}
+#close a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #002E82;
+    border-radius: 0 0 0 50%;
+    border:none;
+}
+#close a:hover{
+    background-color: #F0E52B;
+}
+.info-vistas{
+    position: relative;
+    float: left;
+    text-align: left;
+    font-family: "Josefin Sans";
+    top:250px;
+}
+
+.info-vistas h1{
+    font-weight: bold;
+    line-height: 50px;
+    color:#002E82;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    font-size: 5em;
+    margin: 1% 0 0 0;
+    padding: 0;
+}
+.info-vistas h6{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.info-vistas p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.info-vistas h1 strong{
+    font-size: 2em;    
+}
+.info-vistas h1 span{
+    font-weight: 300;
+}
+.info-vistas h6{
+    font-size: 1em;
+}
+.btn-comprar{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 50%;
+    float: left;
+    padding: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: orange;
+    font-size: 1.2em;
+}
+.redes-sociales{
+    width:100%;
+    float: left;
+    margin: 10px 0;
+    text-align: center;
+}
+.redes-sociales a{
+    width: auto;
+    float: left;
+    margin: 0 5px;
+}
+.redes-sociales a:hover{
+    cursor: pointer;
+}
+.redes-sociales a img{
+    width: 30px;
+    height: 30px;
+}
+.imgs-vistas{
+    width: 850px;
+    float: left;
+}
+.img-monitoreo{
+    position: relative;
+    top:50px;
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+.img-monitoreo img{
+    width: 120%;
+    float: right;
+}
+.monitoreo-casa, .televideo, .telerastreo{
+    height: 768px;
+    width: 100%;
+}
+.monitoreo-casa{background-color: red;}
+.televideo{background-color: green;}
+.telerastreo{background-color: blueviolet;}
+
+.contenedor{
+    width: 1400px;
+    margin: 0 auto;
+    height: 100%;
 }
