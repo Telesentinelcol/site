@@ -2546,3 +2546,97 @@ p.datos-kit-alarmas
         transform:scale3d(1,1,1)
     }
 }
+
+/*----------------------------
+Estilos PQR
+-----------------------------*/
+
+.pqr{
+    width: 70%;
+    float: left;
+    margin: 0 15%;
+    padding: 20px 0;
+    border-radius: 5px;
+    background-color: #002E82;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.pqr label, .pqr input{
+    width: 30.3%;
+    float: left;
+    margin: 5px 1.5%;
+    color: #FFF;
+    border: none;
+    text-align: left;
+    font-weight: 100;
+    font-family:'Open Sans','OpenSans-Light'
+    
+}
+.pqr input{
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 5px;
+}
+.pqr textarea{
+    width: 97%;
+    float: left;
+    margin: 1.5%;
+    font-weight: 100;
+    font-family:'Open Sans','OpenSans-Light';
+}
+#quejas h1{
+    margin: 150px 0 0 0;
+    text-align: center;
+    width: 100%;
+    float: left;
+    font-size: 2.8em;
+}
+#quejas p{
+    width: 70%;
+    margin: 20px 15% 30px;
+    float: left;
+    font-size: 1.8em;
+    color: #333;
+    font-weight: 100;
+}
+.pqr input[type=submit]{
+    width: 20%;
+    float: left;
+    margin: 0 40% 10px;
+    background-color:#FF0 !important;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1;
+    font-weight: bold;
+}
+.redes-sociales{
+    width: 60% !important;
+    margin: 20px 20% 0 !important;
+    float: left;
+    
+}
+.redes-sociales h2{
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1.5em;
+}
+.redes-sociales img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+    float: left;
+    padding: 0;
+}
+.redes-sociales a{
+    text-align: left;
+    color: #666;
+    text-decoration: none;
+    width: 100%;
+    float: left;
+}
+.redes-sociales a:hover{
+    cursor: pointer;
+}

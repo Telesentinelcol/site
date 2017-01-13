@@ -46,6 +46,7 @@ $ini = isset($inicio) ? $inicio : ''; ?>
                         <i class="fa fa-list-ol" aria-hidden="true"></i><span class="caret"></span></a>
                     <ul class="dropdown-menu menu-desplegable">
                         <li><a href="/pagoonline/" target="_blank"><figure class="icon-pse"></figure> Pagos seguros en línea</a></li>
+                        <li><a href="<?= $section ?>pqr/">Quejas y Recamos</a></li>
                         <li><a href="http://telesentinel.servertrack.co/telesentinel/index.php" target="_blank">Rastreo vehicular</a></li>
                         <li><a href="<?= $ruta ?>/blog/" target="_blank">Blog</a></li>
                         <li><a href="/web/index.php" target="_blank">Portal comercial web</a></li>

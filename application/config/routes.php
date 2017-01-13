@@ -56,6 +56,7 @@ $route['monitoreo'] = 'home/section/$1/';
 $route['equipos'] = 'home/section/$1/';
 $route['sitemap'] = 'home/section/$1/';
 $route['error'] = 'home/section/$1/';
+$route['pqr'] = 'home/section/$1/';
 $route['sensor-doble-tecnologia'] = 'home/productos/$1/';
 $route['magneticos'] = 'home/productos/$1/';
 $route['teclado'] = 'home/productos/$1/';
