@@ -2057,9 +2057,8 @@ footer
     padding:20px
 }
 
-.icon-pse
+.icon-pse, .icon-qs
 {
-    background-image:url(../img/icon-menu-monitoreo/icon-pse.png);
     background-repeat:no-repeat;
     width:30px;
     height:30px;
@@ -2067,10 +2066,23 @@ footer
     float:left;
     margin:0 10px 0 0
 }
+.icon-qs{background-image:url(../img/icon-soporte-tele-qs.png);}
+.icon-pse{background-image:url(../img/icon-menu-monitoreo/icon-pse.png);}
 
 .icon-pse-footer
 {
     background-image:url(../img/icon-menu-monitoreo/icon-pse.png);
+    background-repeat:no-repeat;
+    width:30px;
+    height:30px;
+    background-size:100% 100%;
+    margin:0 10px 0 0;
+    position:absolute;
+    left:-35%
+}
+.icon-qs-footer
+{
+    background-image:url(../img/icon-soporte-tele-qs.png);
     background-repeat:no-repeat;
     width:30px;
     height:30px;
@@ -2252,11 +2264,11 @@ footer
 
 .bg-moto-home
 {
-    height:190px;
+    height:240px;
     overflow:hidden;
     position:absolute;
-    top:56%;
-    left:26%
+    top:53%;
+    left:28%
 }
 
 .bg-moto-home img
