@@ -2576,17 +2576,19 @@ Estilos PQR
     width: 30.3%;
     float: left;
     margin: 5px 1.5%;
-    color: #FFF;
     border: none;
     text-align: left;
     font-weight: 100;
     font-family:'Open Sans','OpenSans-Light'
-    
+}
+.pqr label{
+    color: #FFF;
 }
 .pqr input{
     background-color: #FFF;
     border-radius: 5px;
     padding: 5px;
+    color: #000 !important;
 }
 .pqr textarea{
     width: 97%;

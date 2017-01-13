@@ -1,8 +1,22 @@
-<?php $ruta = isset($rut) ? $rut : '';
+<?php
+$ruta = isset($rut) ? $rut : '';
 $section = isset($section) ? $section : '';
-$ini = isset($inicio) ? $inicio : ''; ?>
+$ini = isset($inicio) ? $inicio : '';
+?>
 <div class="content" itemscope itemtype ="http://schema.org/Product">
     <figure class="logotipo"></figure>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="loading">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="<?= $ruta ?>img/loading.gif" alt="" title=""/>
+                    Enviando datos
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
     <section class="section animated fadeIn" id="bg-zero">
         <div class="dummy-pois">
             <div class="tooltip tooltip-east monitoreo-zero-tooltip md-trigger">

@@ -4,27 +4,29 @@
     <div class="row section" id="quejas">
         <h1>Servicio al cliente</h1>
         <p>Hemos creado este espacio para tener una comunicación directa con usted, por favor diligencie la mayor catidad de información para facilitar el proceso de servicio con usted. Gracias.</p>
-        <form class="pqr">
+        
+        <form class="pqr" action="javascript:void(0)" method="POST" id="formpqr" name="formpqr" onsubmit="send_email('nombreformulario')">
             <label>Nombre y Apellido</label>
             <label>Celular</label>
             <label>Teléfono fijo</label>
             
-            <input type="text" value="" placeholder="Nombre y apellido" required=""/>
-            <input type="tel" value="" placeholder="Celular" required=""/>
-            <input type="tel" value="" placeholder="Telesentinel"/>
+            <input name="nombre" type="text" value="" placeholder="Nombre y apellido" required=""/>
+            <input name="celular" type="tel" value="" placeholder="Celular" required=""/>
+            <input name="telefono_fijo" type="tel" value="" placeholder="Telefono fijo"/>
             
             <label>Dirección</label>
             <label>Correo electrónico</label>
             <label>Número de contrato</label>
             
-            <input type="text" value="" placeholder="Dirección"/>
-            <input type="tel" value="" placeholder="Correo electrónico"/>
-            <input type="text" value="" placeholder="Número Contrato"/>
+            <input name="direccion" type="text" value="" placeholder="Dirección"/>
+            <input name="email" type="tel" value="" placeholder="Correo electrónico"/>
+            <input name="ncontrato" type="text" value="" placeholder="Número Contrato"/>
             
-            <textarea rows="8" placeholder="Escriba aquí"></textarea>
+            <textarea name="observaciones"rows="8" placeholder="Escriba aquí"></textarea>
             <input type="submit" value="Enviar"/>
             
         </form>
+        
         <div class="row redes-sociales">
             <div class="col-md-6 col-lg-6">
                 <h2>Sigenos en:</h2>
