@@ -1786,7 +1786,6 @@ header
     text-align:left;
     font-size:1.8em;
     font-weight:200;
-    margin-top:120px;
     color:#253578;
     list-style-type:none
 }
@@ -2651,4 +2650,29 @@ Estilos PQR
 }
 .redes-sociales a:hover{
     cursor: pointer;
+}
+.frase-footer{
+   width: 88%;
+   float: left;
+   margin: 120px 6% 0;
+   text-align: left;
+   font-weight: 100;
+   font-family:'Open Sans','OpenSans-Light';
+}
+.frase-footer a{
+    width: 40%;
+    float: left;
+    margin: 0 10% 0 0;
+    padding: 10px 0;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    background-color: #002E82;
+    font-size: 1.2em;
+    border-radius: 5px;
+   
+}
+.frase-footer a:hover{
+    cursor: pointer;
+    color: #FFF;
 }

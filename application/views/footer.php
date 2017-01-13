@@ -1,10 +1,16 @@
-<?php $ruta = isset($rut) ? $rut : ''; ?>
+<?php $ruta = isset($rut) ? $rut : ''; 
+$section = isset($section) ? $section : ''; ?>
 <footer id="contacto">
     <div class="row datos-contacto">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div id="formContacto"></div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="frase-footer">
+                <p>Está interesado en alguno de nuestros servervicios, diligencie el formulario de contacto y proto nos comunicaremos con usted.</p>
+                <a href="<?= $section ?>pqr/" class="btn-servicio">Servicio al cliente</a>
+                <a href="<?= $section ?>trabajo/" class="btn-trabajo">Trabaje con nosotros</a>
+            </div>
             <ul class="telefonos" itemscope itemtype ="http://schema.org/PostalAddress">
                 <li><b itemprop="addressLocality">Bogotá:</b> <span itemprop="telephone"> (+57-1) 288 87 88 opción 2</span></li>
                 <li><b itemprop="addressLocality">Medellin:</b><span itemprop="telephone">(+57-4) 268 92 22</span></li>
