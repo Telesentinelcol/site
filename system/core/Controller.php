@@ -61,7 +61,7 @@ class CI_Controller {
         
         public function Permitidos(){
             $permitidos = array('monitoreo','televideo','rastreo','equipos','referido','bucaramanga','barranquilla','cali','girardot',
-            'medellin','tunja','valledupar','villavicencio','sitemap','error','pqr',);
+            'medellin','tunja','valledupar','villavicencio','sitemap','error','trabajo','pqr',);
             return $permitidos;
         }
 }
