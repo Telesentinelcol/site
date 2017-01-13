@@ -1781,8 +1781,9 @@ header
 
 .telefonos
 {
-    width:100%;
+    width:40%;
     float:left;
+    margin: 20px 4% 0 0;
     text-align:left;
     font-size:1.8em;
     font-weight:200;
@@ -2654,10 +2655,22 @@ Estilos PQR
 .frase-footer{
    width: 88%;
    float: left;
-   margin: 120px 6% 0;
+   margin: 130px 6% 0;
    text-align: left;
    font-weight: 100;
    font-family:'Open Sans','OpenSans-Light';
+}
+.frase-footer p{
+    font-size: 1.2em;
+    margin-bottom: 46px;
+}
+.frase-footer-a{
+    width: 70%;
+    float: right;
+    text-align: left;
+    font-weight: 100;
+    font-family:'Open Sans','OpenSans-Light';
+    font-size: 1.2em;
 }
 .frase-footer a{
     width: 40%;

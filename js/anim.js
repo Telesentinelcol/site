@@ -68,8 +68,8 @@ function animacioncasa() {
 function animacionlogo() {
     TweenLite.to('.img-logo', 1, {
         left: '+=100',
-        height: '3%',
-        width: '3%'
+        height: '5%',
+        width: '5%'
     });
 }
 

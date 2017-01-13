@@ -7,7 +7,7 @@ $section = isset($section) ? $section : ''; ?>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="frase-footer">
-                <p>Está interesado en alguno de nuestros servervicios, diligencie el formulario de contacto y proto nos comunicaremos con usted.</p>
+                <p>Si está interesado en otras consultas, elija alguna de estas opciones</p>
                 <a href="<?= $section ?>pqr/" class="btn-servicio">Servicio al cliente</a>
                 <a href="<?= $section ?>trabajo/" class="btn-trabajo">Trabaje con nosotros</a>
             </div>
@@ -16,6 +16,9 @@ $section = isset($section) ? $section : ''; ?>
                 <li><b itemprop="addressLocality">Medellin:</b><span itemprop="telephone">(+57-4) 268 92 22</span></li>
                 <li><b itemprop="addressLocality">Bucaramanga: </b><span itemprop="telephone">(+57-7) 691 79 79</span></li>
                 <li><b itemprop="addressLocality">Cali: </b><span itemprop="telephone">(+57-2) 386 00 00 - 668 35 35</span></li>
+                
+            </ul>
+            <ul class="telefonos" itemscope itemtype ="http://schema.org/PostalAddress">
                 <li><b itemprop="addressLocality">Villavicencio:</b><span itemprop="telephone">(+57-8) 682 80 80</span></li>
                 <li><b itemprop="addressLocality">Valledupar:</b><span itemprop="telephone"> (+57-5) 584 05 55</span></li>
                 <li><b itemprop="addressLocality">Barranquilla:</b><span itemprop="telephone">(+57-1) 288 87 88</span></li>

@@ -11,6 +11,7 @@ if (isset($_POST['dispositivo'])) :
 endif;
 ?>
 <h1>Contacto</h1>
+<p class="frase-footer-a">Si está interesado en alguno de nuestros servicios, diligencie el formulario de contacto y pronto nos comunicaremos con usted.</p>
 <form action="javascript:void(0)" onsubmit="enviarform();" name="fo3" method="POST" id="fo3method" name="fo3method">
     <input type="hidden" name="origen" value="<?= $origen ?>" >
     <input type="hidden" name="pais" value="CO" >
