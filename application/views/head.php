@@ -36,7 +36,7 @@
         <script type="text/javascript">
                 $(document).ready(function() {
                         $('#fullpage').fullpage({
-                                sectionsColor: ['#FFF', '#FFF', '#FFF'],
+                                sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF'],
                         css3: true
                 });
                 });
