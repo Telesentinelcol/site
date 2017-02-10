@@ -14,8 +14,7 @@
         <link href="<?= $ruta ?>css/media.css" rel="stylesheet" type="text/css"/>
         <link href="<?= $ruta ?>css/animate.css" rel="stylesheet" type="text/css"/>
         <link href="<?= $ruta ?>css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="<?= $ruta ?>css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="<?= $ruta ?>css/bootstrap/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="<?= $ruta ?>css/sweetalert.css">
         <link rel="stylesheet" href="<?= $ruta ?>css/galery/galery.css">
         <link rel="stylesheet" href="<?= $ruta ?>css/fullpages/jquery.fullPage.css">

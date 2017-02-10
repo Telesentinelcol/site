@@ -404,3 +404,89 @@ function navigatoricon()
         $('.collapse').collapse('show');
     }
 }
+
+
+function mostrar(id) {	
+	$(".preloader").animate({left: "49.4%",top: "28px",width: "60px",height: "60px"});
+	$(".preloader-a").animate({left: "61.1%",top: "28px",width: "60px",height: "60px"});
+	$(".preloader-b").animate({left: "89.5%",top: "28px",width: "60px",height: "60px"});
+	$(".preloader-c").animate({left: "30.3%",top: "28px",width: "60px",height: "60px"});
+	$(".preloader-d").animate({left: "30.3%",top: "264px",width: "60px",height: "60px"});
+	$(".preloader-e").animate({left: "30.3%",top: "378px",width: "60px",height: "60px"});
+	$(".preloader-f").animate({left: "89.5%",top: "214px",width: "60px",height: "60px"});
+	$(".preloader-g").animate({left: "89.5%",top: "374px",width: "60px",height: "60px"});
+        $(".preloader-h").animate({left: "45.6%",top: "69px",width: "60px",height: "60px"});
+	$(".preloader-i").animate({left: "59.1%",top: "69px",width: "60px",height: "60px"});
+	$(".preloader-j").animate({left: "72%",top: "69px",width: "60px",height: "60px"});
+	$(".preloader-k").animate({left: "38.4%",top: "69px",width: "60px",height: "60px"});
+	$(".preloader-l").animate({left: "38.4%",top: "222px",width: "60px",height: "60px"});
+	$(".preloader-m").animate({left: "87.8%",top: "161px",width: "60px",height: "60px"});
+	$(".preloader-n").animate({left: "87.8%",top: "285px",width: "60px",height: "60px"});
+	
+	$('<style>.preloader::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-a::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-b::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-c::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-d::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-e::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-f::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-g::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+        $('<style>.preloader-h::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-i::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-j::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-k::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-l::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-m::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-n::after{width:70px !important; height:70px !important; top:-5px; left:-5px;}</style>').appendTo('head');
+	
+    $("#element .sub-content .carousel .carousel-inner .item").removeClass('active');
+	$(".img-casa").animate({margin: "-34px 0 0 0", width: "100%"});
+    $(".prueba").animate({
+        width: "65%", margin: "0 0 0 5%"
+    }, 0, function () {
+        $(".footer").attr('style', 'height : 38,9%');
+        $("#element .sub-content .carousel .carousel-inner #" + id).addClass('active');
+    });
+	
+}
+
+function ocultar() {
+    $("#element .sub-content .carousel .carousel-inner .item").removeClass('active');
+    $(".prueba").animate({
+        width: "1200px", margin: "0 20%"
+    }, 0, function () {
+        $(".footer").fadeOut('fast');
+    });
+	$(".img-casa").animate({margin: "0 0 0 0", width: "100%"});
+	$(".preloader").animate({left: "50.3%",top: "54px",width: "80px",height: "80px"});
+	$(".preloader-a").animate({left: "62.5%",top: "54px",width: "80px",height: "80px"});
+	$(".preloader-b").animate({left: "92%",top: "54px",width: "80px",height: "80px"});
+	$(".preloader-c").animate({left: "30.7%",top: "54px",width: "80px",height: "80px"});
+	$(".preloader-d").animate({left: "30.7%",top: "285px",width: "80px",height: "80px"});
+	$(".preloader-e").animate({left: "30.7%",top: "402px",width: "80px",height: "80px"});
+	$(".preloader-f").animate({left: "92%",top: "238px",width: "80px",height: "80px"});
+	$(".preloader-g").animate({left: "92%",top: "402px",width: "80px",height: "80px"});
+        $(".preloader-h").animate({left: "40.5%",top: "41px",width: "80px",height: "80px"});
+	$(".preloader-i").animate({left: "57.5%",top: "41px",width: "80px",height: "80px"});
+	$(".preloader-j").animate({left: "73.5%",top: "41px",width: "80px",height: "80px"});
+	$(".preloader-k").animate({left: "31.7%",top: "41px",width: "80px",height: "80px"});
+	$(".preloader-l").animate({left: "31.7%",top: "234px",width: "80px",height: "80px"});
+	$(".preloader-m").animate({left: "93%",top: "160px;",width: "80px",height: "80px"});
+	$(".preloader-n").animate({left: "93%",top: "312px",width: "80px",height: "80px"});
+        
+	$('<style>.preloader::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-a::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-b::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-c::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-d::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-e::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-f::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-g::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+        $('<style>.preloader-h::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-i::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-j::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-k::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-l::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-m::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+	$('<style>.preloader-n::after{width:90px !important; height:90px !important;top:-5px; left:-5px;}</style>').appendTo('head');
+}

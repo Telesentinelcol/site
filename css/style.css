@@ -492,24 +492,6 @@ header
     -o-animation:canbio 2s infinite;
     -moz-animation:canbio 2s infinite
 }
-
-.abajomonitoreo
-{
-    background-image:url(../img/abajo.svg);
-    background-size:100% 100%;
-    width:50px;
-    height:50px;
-    background-repeat:no-repeat;
-    position:absolute;
-    bottom:5%;
-    left:50%;
-    z-index:1000;
-    animation:canbio 2s infinite;
-    -webkit-animation:canbio 2s infinite;
-    -o-animation:canbio 2s infinite;
-    -moz-animation:canbio 2s infinite
-}
-
 .content-monitoreo-de-alarmas
 {
     width:100%;
@@ -2656,17 +2638,18 @@ article{
     bottom: 0;
     right: 0;
     width: 30%;
-    height: 88.9%;
+    height: 83.9%;
     border-left: 1px solid #333;
     text-align: center;
 }
 .sub-content{
-    width:1200px;
-    margin: 0 auto;
-    height: 100%;
+    width:100%;
+    margin: 10% auto 0 auto;
+    height: 90%;
 }
 .prueba{
     width:1200px;
+    top:20px;
     margin: 0 auto;
     height: 88.9%;
     max-height: 768px;
@@ -2692,8 +2675,8 @@ article{
     position: relative;
 }
 .imgs-equipos{
-    height: 80%;
-    margin: 5% 0 15%;
+    width: 80%;
+    margin: 0 10%;
 }
 .titulo-equipos, .descripcion-equipos, .link-contato{
     font-family: "Josefin Sans";
@@ -2744,7 +2727,7 @@ article{
     height: 100%;
 }
 
-.preloader, .preloader-a, .preloader-b, .preloader-c, .preloader-d, .preloader-e, .preloader-f, .preloader-g{
+.preloader, .preloader-a, .preloader-b, .preloader-c, .preloader-d, .preloader-e, .preloader-f, .preloader-g, .preloader-h, .preloader-i, .preloader-j, .preloader-k, .preloader-l, .preloader-m, .preloader-n{
     width: 80px;
     height: 80px;
     position: absolute;
@@ -2775,6 +2758,33 @@ article{
 }
 .preloader-f{
     top: 238px;
+}
+.preloader-h, .preloader-i, .preloader-j, .preloader-k{
+    top: 41px;
+}
+.preloader-g{
+    top: 312px;
+}
+.preloader-i{
+    left: 73.5%;
+}
+.preloader-m, .preloader-n {
+    left: 93%;
+}
+.preloader-j, .preloader-k, .preloader-l {
+    left: 31.7%;
+}
+.preloader-h{
+    left: 40.5%;
+}
+.preloader-i{
+    left: 57.5%;
+}
+.preloader-k{
+    top: 234px;
+}
+.preloader-l{
+    top: 160px;
 }
 
 .preloader:after, .preloader-a:after, .preloader-b:after, .preloader-c:after, .preloader-d:after, .preloader-e:after, .preloader-f:after, .preloader-g:after  {
@@ -2821,33 +2831,27 @@ article{
 }
 #close a{
     position: absolute;
-    right: 0;
-    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #002E82;
-    border-radius: 0 0 0 50%;
     border:none;
+    z-index: 99999;
 }
 #close a:hover{
     background-color: #F0E52B;
 }
 .info-vistas{
-    width: 280px;
-    top: 240px;
     position: relative;
+    width: 350px;
     float: left;
     text-align: left;
-    font-family: "Josefin Sans";
+    top: 150px;
 }
-
 .info-vistas h1{
     font-weight: bold;
     line-height: 50px;
     color:#002E82;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 100;
-    font-size: 4.8em;
-    margin: 1% 0 0 0;
-    padding: 0;
 }
 .info-vistas h6{
     margin: 0;
@@ -2856,19 +2860,19 @@ article{
 }
 .info-vistas p{
     margin-top: 20px;
-    font-weight: 400;
-    font-size: 1.5em;
-    font-style: italic;
+    font-weight: 200;
+    font-size: 1.2em;
     letter-spacing: 1px;
+    
 }
+
 .info-vistas h1 strong{
-    font-size: 2em;    
+font-size: 2em;    
 }
-.info-vistas h1 span{
-    font-weight: 300;
-}
-.info-vistas h6{
-    font-size: 1em;
+.info-vistas{}
+.imgs-vistas{
+    width: 850px;
+    float: left;
 }
 .btn-comprar{
     background: transparent;
@@ -2938,4 +2942,41 @@ article{
 }
 .contenedor .col-md-9{
     height: 100%;
+}
+.abajomonitoreo
+{
+    background-image:url(../img/abajo.svg);
+    background-size:100% 100%;
+    width:50px;
+    height:50px;
+    background-repeat:no-repeat;
+    position:absolute;
+    bottom:5%;
+    left:50%;
+    z-index:1000;
+    animation:canbio 2s infinite;
+    -webkit-animation:canbio 2s infinite;
+    -o-animation:canbio 2s infinite;
+    -moz-animation:canbio 2s infinite
+}
+.carousel-control.left{
+    background: transparent !important;
+}
+.carousel-control.right{
+    background: transparent !important;
+}
+.morph-button > button {
+    background: transparent !important;
+    border: none;
+    text-decoration:none;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    color: orange;
+    margin-top:5px;
+    overflow: hidden;
+}
+.glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
+    color: #002E82;
 }
