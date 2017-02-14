@@ -1,163 +1,111 @@
 <?php $ruta = isset($rut) ? $rut : ''; ?>
-<div class="content">
-    <figure class="logotipo-televideo">
-        <ul>
-            <li><a href="javascript:scrollToApartamento();">Televideo hogar</a></li>
-            <li><a href="javascript:scrollToFabrica();">Televideo empresa</a></li>
-            <li><a href="javascript:scrollToTelevideo3();">Observe su empresa</a></li>
-            <li><a href="javascript:scrollToTelevideo4();">Observe su hogar</a></li>
-            <li><a href="javascript:scrollToTelevideo5();">Reacción motorizada</a></li>
-        </ul>
-    </figure>
-    
-    <section class="section" id="bg-apartamento">
-        <div class="dummy-pois">
-            <a href="productos/camara.html">
-                <div class="tooltip tooltip-west televideo-tooltip-1 md-trigger">
-                    <span class="tooltip-item"></span>
-                    <span class="tooltip-content">
-                        <img class="icon-infrarrojo" src="<?= $ruta ?>img/equipos/camara-a.png" alt=""/>
-                        <span>Cámara de video</span>
-                    </span>
-                </div>
-            </a>
-            <a href="productos/camara-domo.html">
-                <div class="tooltip tooltip-east televideo-tooltip-2 md-trigger">
-                    <span class="tooltip-item"></span>
-                    <span class="tooltip-content">
-                        <img class="icon-infrarrojo" src="<?= $ruta ?>img/equipos/camara-b.png" alt=""/>
-                        <span>Cámara domo</span>
-                    </span>
-                </div>
-            </a>
-            <a href="productos/camara.html">
-                <div class="tooltip tooltip-east televideo-tooltip-3 md-trigger">
-                    <span class="tooltip-item"></span>
-                    <span class="tooltip-content">
-                        <img class="icon-infrarrojo" src="<?= $ruta ?>img/equipos/camara-a.png" alt=""/>
-                        <span>Cámara de video</span>
-                    </span>
-                </div>
-            </a>
-        </div>
-        <div class="info-text">
-            <h3 class="titulo-one">Televideo para hogar</h3>
-            <p class="texto-informativo">
-                Diseñamos la seguridad de su hogar
-            </p>
-            <a class="vermas" href="#contacto" itemprop="url">
-                <div class="md-trigger">Contáctenos <i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
-                <span class="icon-right"></span>
-            </a>
-        </div>
-        <a href="javascript:scrollToFabrica();"><div class="abajomonitoreo"></div></a>
-    </section>
 
-    <section class="section" id="bg-fabrica">
-        <div class="dummy-pois">
-            <a href="productos/camara-domo.html">
-                <div class="tooltip tooltip-west televideo-tooltip-4 md-trigger">
-                    <span class="tooltip-item"></span>
-                    <span class="tooltip-content">
-                        <img class="icon-infrarrojo" src="<?= $ruta ?>img/equipos/camara-b.png" alt=""/>
-                        <span>Cámara domo</span>
-                    </span>
-                </div>
-            </a>
-            <a href="productos/camara.html">
-                <div class="tooltip tooltip-west televideo-tooltip-5 md-trigger">
-                    <span class="tooltip-item"></span>
-                    <span class="tooltip-content">
-                        <img class="icon-infrarrojo" src="<?= $ruta ?>img/equipos/camara-a.png" alt=""/>
-                        <span>Cámara de video</span>
-                    </span>
-                </div>
-            </a>
-            <a href="productos/camara-domo.html">
-                <div class="tooltip tooltip-west televideo-tooltip-6 md-trigger">
-                    <span class="tooltip-item"></span>
-                    <span class="tooltip-content">
-                        <img class="icon-infrarrojo" src="<?= $ruta ?>img/equipos/camara-b.png" alt=""/>
-                        <span>Cámara domo</span>
-                    </span>
-                </div>
-            </a>
-            <a href="productos/camara.html">
-                <div class="tooltip tooltip-east televideo-tooltip-7 md-trigger">
-                    <span class="tooltip-item"></span>
-                    <span class="tooltip-content">
-                        <img class="icon-infrarrojo" src="<?= $ruta ?>img/equipos/camara-a.png" alt=""/>
-                        <span>Cámara de video</span>
-                    </span>
-                </div>
-            </a>
-        </div>
-        <div class="info-text">
-            <h3 class="titulo-one">Televideo para empresas</h3>
-            <p class="texto-informativo">
-                Diseñamos la seguridad de su fábrica o negocio
-            </p>
-            <a class="vermas" href="#contacto" itemprop="url">
-                <div class="md-trigger">Contáctenos <i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
-                <span class="icon-right"></span>
-            </a>
-        </div>
-        <a href="javascript:scrollToTelevideo3();"><div class="abajomonitoreo"></div></a>
-    </section>
+<figure class="logotipo-televideo">
+    <ul>
+        <li><a href="javascript:scrollToApartamento();">Televideo hogar</a></li>
+        <li><a href="javascript:scrollToFabrica();">Televideo empresa</a></li>
+        <li><a href="javascript:scrollToTelevideo3();">Observe su empresa</a></li>
+        <li><a href="javascript:scrollToTelevideo4();">Observe su hogar</a></li>
+        <li><a href="javascript:scrollToTelevideo5();">Reacción motorizada</a></li>
+    </ul>
+</figure>
 
-    <section class="section" id="televide3">
-        <div class="row">
-            <div class="col-xs-12 col-ms-6 col-md-12 col-lg-3 margen-top">    
-                <!--<p class="lead textelevideo text-center">Visualizamos desde la central de monitoreo, las imágenes cuando se recibe la señal de intrusión o pánico.</p>-->
-                <div class="info-text text-televio-3">
-                    <h3 class="titulo-one">Proteja su empresa</h3>
-                    <p class="texto-informativo">Visualizamos desde la central de monitoreo, las imágenes cuando se recibe la señal de intrusión o pánico.</p>	
-                    <a class="vermas" href="#contacto" itemprop="url">
-                        <div class="md-trigger">Contáctenos <i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
-                        <span class="icon-right"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-ms-6 col-md-12 col-lg-9">
-                <img src="<?= $ruta ?>img/ondas.gif" alt="ondas" class="ondas-televiu"/>
-                <figure class="bg-televideo-fabrica"></figure>
+<section class="section" id="section0">
+    <div class="prueba">
+        <div class="info-vistas text-televideo">
+            <h1><strong>Televideo</strong><br><span style="font-size: 0.7em;">para hogar</span></h1>
+            <h6>Sistema de televideo para hogares</h6>
+            <p><em>En teselesentinel diseñamos la seguridad de su hogar</em></p>
+            <button class="btn-comprar">Contacto comercial</button>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/TelesentinelOficial/" target="_blank" class="facebook"><img src="<?= $ruta ?>img/nuevas/icon-facebook.png" alt="Telesentinel en Facebook" title="Telesentinel en Facebook"/></a>
+                <a href="https://www.instagram.com/telesentinel_colombia/" target="_blank" class="Instagram"><img src="<?= $ruta ?>img/nuevas/icon-instagram.png" alt="Telesentinel en Instagram" title="Telesentinel en Instagram"/></a>
+                <a href="https://www.youtube.com/channel/UC4rXZH9n3P29WJqaiQTTr_A" target="_blank" class="youtube"><img src="<?= $ruta ?>img/nuevas/icon-youtube.png" alt="Telesentinel en Youtube" title="Telesentinel en Youtube"/></a>
             </div>
         </div>
-        <a href="javascript:scrollToTelevideo4();"><div class="abajomonitoreo"></div></a>
-    </section>
-    <section class="section" id="televide4">
-        <div class="row">
-            <div class="col-xs-12 col-ms-6 col-md-12 col-lg-9"> 
-                <figure class="bg-televiu"></figure>
-            </div>
-            <div class="col-xs-12 col-ms-6 col-md-12 col-lg-3">
-                <div class="info-text text-televiu">
-                    <h3 class="titulo-one">Cuidamos lo que más quiere</h3>
-                    <p class="texto-informativo">
-                        Observe su hogar o empresa, desde cualquier dispositivo móvil.
-                    </p>
-                    <a class="vermas" href="#contacto" itemprop="url">
-                        <div class="md-trigger">Contáctenos <i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
-                        <span class="icon-right"></span>
-                    </a>
-                </div>
+        <div class="imgs-vistas">
+            <img src="<?= $ruta ?>img/nuevas/televideo-apartamento.png" alt="" title=""/>
+            <div class="preloader-1" onClick="mostrar('ploader-1')"></div>
+            <div class="preloader-2" onClick="mostrar('ploader-2')"></div>
+            <div class="preloader-3" onClick="mostrar('ploader-3')"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="section1">
+    <div class="prueba">
+        <div class="info-vistas text-televideo">
+            <h1><strong>Televideo</strong><br><span style="font-size: 0.7em;">para empresas</span></h1>
+            <h6>Sistema de televideo para empresas</h6>
+            <p><em>En teselesentinel Diseñamos la seguridad de su fábrica o negocio</em></p>
+            <button class="btn-comprar">Contacto comercial</button>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/TelesentinelOficial/" target="_blank" class="facebook"><img src="<?= $ruta ?>img/nuevas/icon-facebook.png" alt="Telesentinel en Facebook" title="Telesentinel en Facebook"/></a>
+                <a href="https://www.instagram.com/telesentinel_colombia/" target="_blank" class="Instagram"><img src="<?= $ruta ?>img/nuevas/icon-instagram.png" alt="Telesentinel en Instagram" title="Telesentinel en Instagram"/></a>
+                <a href="https://www.youtube.com/channel/UC4rXZH9n3P29WJqaiQTTr_A" target="_blank" class="youtube"><img src="<?= $ruta ?>img/nuevas/icon-youtube.png" alt="Telesentinel en Youtube" title="Telesentinel en Youtube"/></a>
             </div>
         </div>
-        <a href="javascript:scrollToTelevideo5();"><div class="abajomonitoreo"></div></a>
-    </section>
-    <section class="section" id="televide5">
-        <div class="row">
-            <div class="col-xs-12 col-ms-6 col-md-6 col-lg-6">    
-                <p class="lead textelevideo text-center"><strong>Reacción motorizada</strong><br> Si se detecta una señal efectiva del servicio de televideo TELESENTINEL procederá a enviar un supervisor motorizado.</p>
-                <a class="vermas text-center" href="#contacto" itemprop="url">
-                    <div class="md-trigger">Contáctenos <i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
-                    <span class="icon-right"></span>
-                </a>
-            </div>
-            <div class="col-xs-12 col-ms-6 col-md-6 col-lg-6">
-                <figure class="bg-moto"></figure>
+        <div class="imgs-vistas">
+            <img src="<?= $ruta ?>img/nuevas/televideo-fabrica.png" alt="" title=""/>
+            <div class="preloader-4" onClick="mostrar('ploader-4')"></div>
+            <div class="preloader-5" onClick="mostrar('ploader-5')"></div>
+            <div class="preloader-6" onClick="mostrar('ploader-6')"></div>
+            <div class="preloader-7" onClick="mostrar('ploader-7')"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="section2">
+    <div class="info-vistas text-televideo">
+        <h1><strong>Televideo</strong><br><span style="font-size: 0.7em;">para empresas</span></h1>
+        <h6>Sistema de televideo para empresas</h6>
+        <p><em>Visualizamos desde la central de monitoreo, las imágenes cuando se recibe la señal de intrusión o pánico.</em></p>
+        <button class="btn-comprar">Contacto comercial</button>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/TelesentinelOficial/" target="_blank" class="facebook"><img src="<?= $ruta ?>img/nuevas/icon-facebook.png" alt="Telesentinel en Facebook" title="Telesentinel en Facebook"/></a>
+            <a href="https://www.instagram.com/telesentinel_colombia/" target="_blank" class="Instagram"><img src="<?= $ruta ?>img/nuevas/icon-instagram.png" alt="Telesentinel en Instagram" title="Telesentinel en Instagram"/></a>
+            <a href="https://www.youtube.com/channel/UC4rXZH9n3P29WJqaiQTTr_A" target="_blank" class="youtube"><img src="<?= $ruta ?>img/nuevas/icon-youtube.png" alt="Telesentinel en Youtube" title="Telesentinel en Youtube"/></a>
+        </div>
+    </div>
+    <div class="imgs-vistas">
+        <img src="<?= $ruta ?>img/nuevas/televideo-fabrica-monitores.png" alt="" title=""/>
+    </div>
+</section>
+
+<section class="section" id="section3">
+    <div class="content">
+        <div class="info-vistas text-televideo">
+            <h1><strong>Televideo</strong><br><span style="font-size: 0.7em;">para hogares y empresas</span></h1>
+            <h6>Cuidamos lo que más quiere</h6>
+            <p><em>Observe su hogar o empresa, desde cualquier dispositivo móvil.</em></p>
+            <button class="btn-comprar">Contacto comercial</button>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/TelesentinelOficial/" target="_blank" class="facebook"><img src="<?= $ruta ?>img/nuevas/icon-facebook.png" alt="Telesentinel en Facebook" title="Telesentinel en Facebook"/></a>
+                <a href="https://www.instagram.com/telesentinel_colombia/" target="_blank" class="Instagram"><img src="<?= $ruta ?>img/nuevas/icon-instagram.png" alt="Telesentinel en Instagram" title="Telesentinel en Instagram"/></a>
+                <a href="https://www.youtube.com/channel/UC4rXZH9n3P29WJqaiQTTr_A" target="_blank" class="youtube"><img src="<?= $ruta ?>img/nuevas/icon-youtube.png" alt="Telesentinel en Youtube" title="Telesentinel en Youtube"/></a>
             </div>
         </div>
-        <a href="javascript:scrollToContacto();"><div class="abajomonitoreo"></div></a>
-    </section>
-</div>
+        <div class="imgs-vistas">
+            <img src="<?= $ruta ?>img/nuevas/televideo-televiu.png" alt="" title=""/>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="section4">
+    <div class="content">
+        <div class="info-vistas text-televideo">
+            <h1><strong>Televideo</strong><br><span style="font-size: 0.7em;">para hogares y empresas</span></h1>
+            <h6>Reacción motorizada</h6>
+            <p><em>Si se detecta una señal efectiva del servicio de televideo TELESENTINEL procederá a enviar un supervisor motorizado.</em></p>
+            <button class="btn-comprar">Contacto comercial</button>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/TelesentinelOficial/" target="_blank" class="facebook"><img src="<?= $ruta ?>img/nuevas/icon-facebook.png" alt="Telesentinel en Facebook" title="Telesentinel en Facebook"/></a>
+                <a href="https://www.instagram.com/telesentinel_colombia/" target="_blank" class="Instagram"><img src="<?= $ruta ?>img/nuevas/icon-instagram.png" alt="Telesentinel en Instagram" title="Telesentinel en Instagram"/></a>
+                <a href="https://www.youtube.com/channel/UC4rXZH9n3P29WJqaiQTTr_A" target="_blank" class="youtube"><img src="<?= $ruta ?>img/nuevas/icon-youtube.png" alt="Telesentinel en Youtube" title="Telesentinel en Youtube"/></a>
+            </div>
+        </div>
+        <div class="imgs-vistas">
+            <img src="<?= $ruta ?>img/nuevas/televideo-moto.png" alt="" title=""/>
+        </div>
+    </div>
+</section>

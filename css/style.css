@@ -1150,18 +1150,9 @@ header
     background-position:center
 }
 
-.texto-informativo
-{
-    font-size:2em;
-    width:100%;
-    float:left;
-    font-weight:200;
-    letter-spacing:1px;
-    text-align:left;
-    margin:0
-}
 
-.titulo-one,.titulo-zero
+
+.titulo-zero
 {
     width:100%;
     float:left;
@@ -1175,24 +1166,6 @@ header
     -webkit-animation:ingresar 5s;
     -o-animation:ingresar 5s;
     animation:ingresar 5s
-}
-
-.vermas
-{
-    width:100%;
-    float:left;
-    text-align:left;
-    font-size:2em;
-    margin-top:0;
-    letter-spacing:1px;
-    color:#253578;
-    font-weight:200
-}
-
-.vermas:hover
-{
-    cursor:pointer;
-    text-decoration:underline
 }
 
 .mtimagen
@@ -1250,35 +1223,9 @@ header
     background-size:auto 100%
 }
 
--televiu
-{
-    background-image:url(../img/bg-televiu.png);
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    width:600px;
-    height:600px;
-    float:left
-}
 
-.bg-moto
-{
-    background-image:url(../img/bg-moto.png);
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    width:600px;
-    height:600px;
-    float:left
-}
 
-.textelevideo
-{
-    font-size:2em!important;
-    width:100%;
-    font-weight:100!important;
-    letter-spacing:1px;
-    text-align:left;
-    margin:300px 0 0
-}
+
 
 .titulo-mostrar
 {
@@ -1701,11 +1648,6 @@ header
 .bg-rastreo-ab
 {
     background-image:url(../img/bg-rastreo-ab.png)
-}
-
-.text-cali > .titulo-one
-{
-    font-size:38px
 }
 
 .telefonos
@@ -2191,19 +2133,8 @@ footer
     margin-top:18%
 }
 
-.bg-moto-home
-{
-    height:240px;
-    overflow:hidden;
-    position:absolute;
-    top:53%;
-    left:28%
-}
 
-.bg-moto-home img
-{
-    height:100%
-}
+
 
 #promo-girardot
 {
@@ -2349,145 +2280,6 @@ p.datos-kit-alarmas
     float:left
 }
 
-@-webkit-keyframes canbio {
-    0%
-    {
-        transform:scale(1.5,1.5)
-    }
-
-    50%
-    {
-        transform:scale(0.9,0.9)
-    }
-
-    100%
-    {
-        transform:scale(1.5,1.5)
-    }
-}
-
-@-moz-keyframes canbio {
-    0%
-    {
-        transform:scale(1,1)
-    }
-
-    50%
-    {
-        transform:scale(0.9,0.9)
-    }
-
-    100%
-    {
-        transform:scale(1,1)
-    }
-}
-
-@-o-keyframes canbio {
-    0%
-    {
-        transform:scale(1,1)
-    }
-
-    50%
-    {
-        transform:scale(0.9,0.9)
-    }
-
-    100%
-    {
-        transform:scale(1,1)
-    }
-}
-
-@-webkit-keyframes pulse {
-    from
-    {
-        -webkit-transform:scale3d(0.2,0.2,1)
-    }
-
-    to
-    {
-        -webkit-transform:scale3d(1,1,1)
-    }
-}
-
-@keyframes pulse {
-    from
-    {
-        -webkit-transform:scale3d(0.2,0.2,1);
-        transform:scale3d(0.2,0.2,1)
-    }
-
-    to
-    {
-        -webkit-transform:scale3d(1,1,1);
-        transform:scale3d(1,1,1)
-    }
-}
-
-@-webkit-keyframes movcaruno {
-    0%
-    {
-        transform:translate(1600px,-800px) scale(0,0)
-    }
-
-    100%
-    {
-        transform:translate(0px,0px) scale(1.1,1.1)
-    }
-}
-
-@-moz-keyframes movcaruno {
-    0%
-    {
-        transform:translate(1600px,-800px) scale(0,0)
-    }
-
-    100%
-    {
-        transform:translate(0px,0px) scale(1.1,1.1)
-    }
-}
-
-@-o-keyframes movcaruno {
-    0%
-    {
-        transform:translate(1600px,-800px) scale(0,0)
-    }
-
-    100%
-    {
-        transform:translate(0px,0px) scale(1.1,1.1)
-    }
-}
-
-@-webkit-keyframes pulse {
-    from
-    {
-        -webkit-transform:scale3d(0.2,0.2,1)
-    }
-
-    to
-    {
-        -webkit-transform:scale3d(1,1,1)
-    }
-}
-
-@keyframes pulse {
-    from
-    {
-        -webkit-transform:scale3d(0.2,0.2,1);
-        transform:scale3d(0.2,0.2,1)
-    }
-
-    to
-    {
-        -webkit-transform:scale3d(1,1,1);
-        transform:scale3d(1,1,1)
-    }
-}
-*/
 /*-----------------
 NUEVOS ESTILOS
 ------------------*/
@@ -2859,10 +2651,6 @@ font-size: 2em;
     width: 30px;
     height: 30px;
 }
-.imgs-vistas{
-    width: 850px;
-    float: left;
-}
 .img-monitoreo{
     position: relative;
     top:40px;
@@ -2951,61 +2739,9 @@ font-size: 2em;
     float: left;
     width: 10%;
 }
-.info-text
-{
-    position:absolute;
-    width:26%;
-    left:50px;
-    top:30%
+.text-televideo{
+    top:150px;
 }
-.casa h2,.empresa h2,#bg-fabrica h2,#bg-apartamento h2{
-    width:22%;
-    top:30%;
-    left:3%;
-    text-shadow:-5px 5px 5px rgba(0,0,0,0.3);
-    letter-spacing:1px;
-    text-align:left;
-    font-size:3.7em;
-    color:#333;
-    position:absolute;
-    font-weight:200;
-    line-height:normal
-}
-.bg-televideo-fabrica
-{
-    background-image:url(../img/bg-televideo-fabrica-1.png);
-    background-repeat:no-repeat;
-    background-size:100% auto;
-    width:90%;
-    float:left;
-    height:600px;
-    margin-top:250px
-}
-
-.bg-televiu
-{
-    background-image:url(../img/bg-televiu.png);
-    background-repeat:no-repeat;
-    background-size:100% auto;
-    width:80%;
-    margin:0 10%;
-    background-position:top center;
-    float:left;
-    height:730px
-}
-
-.text-televiu
-{
-    position:absolute;
-    width:100%;
-    left:-40px;
-    top:300px
-}
-
-.text-televio-3
-{
-    position:absolute;
-    width:100%;
-    left:50px;
-    top:250px
+.text-televideo h1 strong{
+    font-size: 1.2em;
 }
