@@ -9,6 +9,7 @@
             <li><a href="javascript:scrollToTelevideo5();">Reacción motorizada</a></li>
         </ul>
     </figure>
+    
     <section class="section" id="bg-apartamento">
         <div class="dummy-pois">
             <a href="productos/camara.html">

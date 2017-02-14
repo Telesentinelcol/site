@@ -21,7 +21,7 @@ $ini = isset($inicio) ? $inicio : '';
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="<?= $section ?>"><figure class="icon-telemonitoreo"></figure>Telemonitoreo</a></li>
+                        <li><a href="<?= $section ?>/monitoreo"><figure class="icon-telemonitoreo"></figure>Telemonitoreo</a></li>
                         <li><a href="<?= $ini ?>#bg-two"><figure class="icon-televideo"></figure>Televideo</a></li>
                         <li><a href="<?= $ini ?>#bg-three"><figure class="icon-telerastreo"></figure>Telerastreo</a></li>
                         <li><a href="/pagoonline/"><figure class="icon-pse"></figure>Pago en linea</a></li>

@@ -19,9 +19,8 @@ $equipos = isset($equipos) ? $equipos : '';
 
     <div class="section " id="section0">
         <div class="prueba">
-            
-            <div class="info-vistas">
-                <h1><strong>Tele</strong><br><span>monitoreo</span></h1>
+            <div class="info-vistas" style="top:130px;">
+                <h1><strong>Tele</strong><br><span style="font-size: 0.7em;">monitoreo hogar</span></h1>
                 <h6>Sistema de monitoreo de alarmas para hogares</h6>
                 <p><em>En teselesentinel diseñamos la seguridad de su hogar</em></p>
                 <button class="btn-comprar">Cotizalo ahora</button>
@@ -31,11 +30,9 @@ $equipos = isset($equipos) ? $equipos : '';
                     <a href="https://www.youtube.com/channel/UC4rXZH9n3P29WJqaiQTTr_A" target="_blank" class="youtube"><img src="<?= $ruta ?>img/nuevas/icon-youtube.png" alt="Telesentinel en Youtube" title="Telesentinel en Youtube"/></a>
                 </div>
             </div>
-            
             <div class="imgs-vistas">
                 <img  class="img-casa" src="<?= $ruta ?>img/nuevas/alarmas-casa.png" alt="" title=""/>
             </div>
-            
             <!-- botones de alarma para la casa-->
             <div class="preloader" onClick="mostrar('ploader')"></div>
             <div class="preloader-a" onClick="mostrar('ploader-a')"></div>
@@ -46,15 +43,14 @@ $equipos = isset($equipos) ? $equipos : '';
             <div class="preloader-f" onClick="mostrar('ploader-f')"></div>
             <div class="preloader-g" onClick="mostrar('ploader-g')"></div>
         </div>
-
         <a href="javascript:scrollToEmpresa();"><div class="abajomonitoreo"></div></a>
     </div>
 
     <div class="section " id="section1">
-        
+
         <div class="prueba">
-            <div class="info-vistas">
-                <h1><strong>Tele</strong><br><span>monitoreo</span></h1>
+            <div class="info-vistas" style="top:130px;">
+                <h1><strong>Tele</strong><br><span style="font-size: 0.6em;">monitoreo empresas</span></h1>
                 <h6>Sistema de monitoreo de alarmas para empresas</h6>
                 <p><em>En teselesentinel diseñamos la seguridad para su empresa</em></p>
                 <button class="btn-comprar">Contacto comercial</button>
@@ -76,41 +72,42 @@ $equipos = isset($equipos) ? $equipos : '';
             <div class="preloader-m" onClick="mostrar('ploader-m')"></div>
             <div class="preloader-n" onClick="mostrar('ploader-n')"></div>
         </div>
-        
-        <!--<section class="empresa" id="empresa">
-            <h2>Diseñamos la seguridad para su empresa</h2>
-            <div class="md-trigger mtimagen">
-                <div class=" monitoreo-empresa">
-                    <figure class="bg-local" id="monitoreo-empresa"></figure>
-                </div>
-            </div>
-            <div class="tooltip tooltip-west btn-panico-negocios">
-                <span class="tooltip-item"></span>
-                <span class="tooltip-content">
-                    <a href="<?= $equipos ?>boton-panico/">
-                        <img src="<?= $ruta ?>img/equipos/btn-panico.png" alt=""/>
-                        <span>Botones de pánico</span>
-                    </a>
-                </span>
-            </div>
-            <div class="tooltip tooltip-west infrarrojo-negocios">
-                <span class="tooltip-item"></span>
-                <span class="tooltip-content">
-                    <a href="<?= $equipos ?>sensor-doble-tecnologia/">
-                        <img src="<?= $ruta ?>img/equipos/sensor.png" alt=""/>
-                        <span>Sensor de infrarojo</span>
-                    </a>
-                </span>
-            </div>
-            <div class="tooltip tooltip-east vibrosensor-negocio">
-                <span class="tooltip-item"></span>
-                <span class="tooltip-content">
-                    <img src="<?= $ruta ?>img/equipos/vibro-sensor.png" alt=""/>
-                    <span>Vibro sensor</span>
-                </span>
-            </div>
-            <a href="javascript:scrollToBeneficios();"><div class="abajomonitoreo"></div></a>
-        </section>-->
+
+<!--<section class="empresa" id="empresa">
+    <h2>Diseñamos la seguridad para su empresa</h2>
+    <div class="md-trigger mtimagen">
+        <div class=" monitoreo-empresa">
+            <figure class="bg-local" id="monitoreo-empresa"></figure>
+        </div>
+    </div>
+    <div class="tooltip tooltip-west btn-panico-negocios">
+        <span class="tooltip-item"></span>
+        <span class="tooltip-content">
+            <a href="<?= $equipos ?>boton-panico/">
+                <img src="<?= $ruta ?>img/equipos/btn-panico.png" alt=""/>
+                <span>Botones de pánico</span>
+            </a>
+        </span>
+    </div>
+    <div class="tooltip tooltip-west infrarrojo-negocios">
+        <span class="tooltip-item"></span>
+        <span class="tooltip-content">
+            <a href="<?= $equipos ?>sensor-doble-tecnologia/">
+                <img src="<?= $ruta ?>img/equipos/sensor.png" alt=""/>
+                <span>Sensor de infrarojo</span>
+            </a>
+        </span>
+    </div>
+    <div class="tooltip tooltip-east vibrosensor-negocio">
+        <span class="tooltip-item"></span>
+        <span class="tooltip-content">
+            <img src="<?= $ruta ?>img/equipos/vibro-sensor.png" alt=""/>
+            <span>Vibro sensor</span>
+        </span>
+    </div>
+    <a href="javascript:scrollToBeneficios();"><div class="abajomonitoreo"></div></a>
+</section>-->
+
     </div>
 
     <div class="section " id="section2">
@@ -118,58 +115,59 @@ $equipos = isset($equipos) ? $equipos : '';
             <h2 class="titulo-beneficios titulo-mostrar">Beneficios de nuestro servicio de sistema de monitoreo de alarmas</h2>
             <div class="md-trigger mtimagen">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="img-moto">
-
                     <img src="<?= $ruta ?>img/moto.png" alt="moto" class="img-moto">
                 </div>
             </div>
             <div class="md-trigger mtimagen">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="img-text-monitoreo">
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-monitoreo.png" alt="">
-                            <p><span>Contamos con un protocolo para cada tipo de señal de emergencia:</span>
-                                Intrusión, pánico, emergencias médicas, apertura por acceso forzado</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-mantenimiento.png" alt="">
-                            <p><span>Plan Mantenimiento</span>
-                                Incluido en la factura mensual de monitoreo obtendrá asistencia y soporte técnico especializado</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-gprs.png" alt="">
-                            <p><span>Comunicación con frecuencia GPRS.</span>
-                                Transmisión con plataforma de datos a nivel nacional</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-notelefono.png" alt="">
-                            <p><span>No dependemos de la línea telefónica</span>
-                                conectamos el panel de alarma a nuestra central de monitoreo</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-24horas.png" alt="">
-                            <p><span>Asistencia con:</span>
-                                Técnicos online 24 horas</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-email.png" alt="">
-                            <p><span>Envío de mensajes vía SMS y/o correo electrónico.</span>
-                                Apertura y cierre de su sistema de monitoreo</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-pse.png" alt="">
-                            <p><span>Pagos PSE.</span>
-                                Realice el pago de sus facturas desde la comodidad de su hogar o empresa con PSE</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-reaccion.png" alt="">
-                            <p><span>Reacción motorizada</span>
-                                Supervisores estratégicamente distribuidos en diferentes puntos de la ciudad, con sistema de ubicación satelital (GPS).</p>
-                        </article>
-                        <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                            <img src="<?= $ruta ?>img/icon-policia.png" alt="">
-                            <p><span>Reacción Policial</span>
-                                Afiliado a la red de apoyo de la Policía Nacional de Colombia.</p>
-                        </article>
+                    <div class="beneficios">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="img-text-monitoreo">
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-monitoreo.png" alt="">
+                                <p><span>Contamos con un protocolo para cada tipo de señal de emergencia:</span>
+                                    Intrusión, pánico, emergencias médicas, apertura por acceso forzado</p>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-mantenimiento.png" alt="">
+                                <p><span>Plan Mantenimiento</span>
+                                    Incluido en la factura mensual de monitoreo obtendrá asistencia y soporte técnico especializado</p>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-gprs.png" alt="">
+                                <p><span>Comunicación con frecuencia GPRS.</span>
+                                    Transmisión con plataforma de datos a nivel nacional</p>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-notelefono.png" alt="">
+                                <p><span>No dependemos de la línea telefónica</span>
+                                    conectamos el panel de alarma a nuestra central de monitoreo</p>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-24horas.png" alt="">
+                                <p><span>Asistencia con:</span>
+                                    Técnicos online 24 horas</p>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-email.png" alt="">
+                                <p><span>Envío de mensajes vía SMS y/o correo electrónico.</span>
+                                    Apertura y cierre de su sistema de monitoreo</p>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-pse.png" alt="">
+                                <p><span>Pagos PSE.</span>
+                                    Realice el pago de sus facturas desde la comodidad de su hogar o empresa con PSE</p>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-reaccion.png" alt="">
+                                <p><span>Reacción motorizada</span>
+                                    Supervisores estratégicamente distribuidos en diferentes puntos de la ciudad, con sistema de ubicación satelital (GPS).</p>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="<?= $ruta ?>img/icon-policia.png" alt="">
+                                <p><span>Reacción Policial</span>
+                                    Afiliado a la red de apoyo de la Policía Nacional de Colombia.</p>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>

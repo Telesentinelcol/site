@@ -34,7 +34,7 @@ $ini = isset($inicio) ? $inicio : '';
     <div class="section" id="section1">
         <div class="contenedor">
             <div class="col-md-3">
-                <div class="info-vistas">
+                <div class="info-vistas" style="width: 290px;">
                     <h1><strong>Tele</strong><br><span>video</span></h1>
                     <h6>Sistema de video vigilancia para hogares y empresas</h6>
                     <p><em>Visualizamos sus cámaras en caso de emergencia</em></p>
