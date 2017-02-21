@@ -1709,7 +1709,7 @@
     }
 
     .content {
-        width:1280px;
+        width:1200px;
         margin:0 auto
     }
 
@@ -1944,8 +1944,9 @@
     }
 
     .content {
-        width:1400px;
-        margin:0 auto
+        width:1200px;
+        margin:0 auto;
+        overflow: auto;
     }
 
     #bg-zero {

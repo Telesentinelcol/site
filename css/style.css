@@ -1247,14 +1247,6 @@ header
     width:100%
 }
 
-#rastreo2
-{
-    background-image:url(../img/bg-rastreo-2.png);
-    background-size:auto 72%;
-    background-position:center;
-    background-repeat:no-repeat;
-    position:relative
-}
 
 .titulo-rastreo-2
 {
@@ -1323,46 +1315,9 @@ header
     margin:5px 0
 }
 
-.icon-ubicacion,.icon-encedido,.icon-crecorrido,.icon-reportes,.icon-rmovil,.icon-velocidad
-{
-    width:30px;
-    height:30px;
-    float:left;
-    margin:0 20px 0 0;
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    background-position:center
-}
 
-.icon-ubicacion
-{
-    background-image:url(../img/rastreo/icon-ubicacion.png)
-}
 
-.icon-encedido
-{
-    background-image:url(../img/rastreo/icon-encendido.png)
-}
 
-.icon-crecorrido
-{
-    background-image:url(../img/rastreo/icon-crecorrido.png)
-}
-
-.icon-reportes
-{
-    background-image:url(../img/rastreo/icon-reportes.png)
-}
-
-.icon-rmovil
-{
-    background-image:url(../img/rastreo/icon-rmovil.png)
-}
-
-.icon-velocidad
-{
-    background-image:url(../img/rastreo/icon-velocidad.png)
-}
 
 .ofertas1,.ofertas2,.ofertas3,.cali
 {
@@ -1511,17 +1466,7 @@ header
     letter-spacing:15px
 }
 
-.bg-medellin,.bg-bucaramanga,.bg-villavicencio,.bg-barranquilla,.bg-girardot,.bg-valledupar,.bg-tunja,.bg-alianza,.bg-gracias,.bg-sensorlunar,.bg-cali,.bg-discriminador,.bg-sirena,.bg-magneticos,.bg-sensor-doble-tecnologia,.bg-sensor-humo,.bg-radio,.bg-barreras-fotoelectricas,.bg-sensor-exterior,.bg-boton-panico,.bg-camara-domo,.bg-teclado,.bg-camara-infrarrojo,.bg-magnetico-metalico,.bg-rastreo-ab
-{
-    width:100%;
-    float:left;
-    display:block;
-    background-repeat:no-repeat;
-    background-size:100% auto;
-    background-position:center;
-    margin:10% 0 0;
-    height:700px
-}
+
 
 .bg-cali
 {
@@ -1645,10 +1590,7 @@ header
     background-image:url(../img/equipos/bg-boton-panico.png)
 }
 
-.bg-rastreo-ab
-{
-    background-image:url(../img/bg-rastreo-ab.png)
-}
+
 
 .telefonos
 {
@@ -2337,8 +2279,8 @@ article{
     display: block;
 }
 .logo{
-   width: auto;
-   float: left;
+    width: auto;
+    float: left;
     height: 100%;
 }
 .logo img{
@@ -2367,7 +2309,7 @@ article{
     color:#FFF;
     font-family: "Josefin Sans";
 }
-.footer{
+.footer, .footer-1{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -2376,29 +2318,26 @@ article{
     border-left: 1px solid #333;
     text-align: center;
 }
+
 .sub-content{
     width:100%;
     margin: 10% auto 0 auto;
     height: 90%;
 }
-.prueba{
+.prueba, .prueba-1{
     width:1200px;
-    top:20px;
+    top:80px;
     margin: 0 auto;
-    height: 88.9%;
-    max-height: 768px;
-    min-height: 769px;
-    overflow: auto;
     position: relative;
 }
-.prueba h1{
+.prueba h1, .prueba-1 h1{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     font-size: 5em;
     margin: 1% 0 0 0;
     padding: 0;
 }
-.prueba img{
+.prueba img, .prueba-1 img{
     width: 100%;
 }
 
@@ -2461,7 +2400,7 @@ article{
     height: 100%;
 }
 
-.preloader, .preloader-a, .preloader-b, .preloader-c, .preloader-d, .preloader-e, .preloader-f, .preloader-g, .preloader-h, .preloader-i, .preloader-j, .preloader-k, .preloader-l, .preloader-m, .preloader-n{
+.preloader, .preloader-a, .preloader-b, .preloader-c, .preloader-d, .preloader-e, .preloader-f, .preloader-g, .preloader-h, .preloader-i, .preloader-j, .preloader-k, .preloader-l, .preloader-m, .preloader-n, .preloader-1, .preloader-2, .preloader-3{
     width: 80px;
     height: 80px;
     position: absolute;
@@ -2528,7 +2467,18 @@ article{
 .preloader-l{
     top: 160px;
 }
-
+.preloader-1{
+    top: 24px;
+    left: 34%;
+}
+.preloader-2{
+    top: 24px;
+    left: 59%;
+}
+.preloader-3{
+    top: 24px;
+    left: 87%;
+}
 .preloader:after, .preloader-a:after, .preloader-b:after, .preloader-c:after, .preloader-d:after, .preloader-e:after, .preloader-f:after, .preloader-g:after, .preloader-h:after, .preloader-i:after, .preloader-j:after, .preloader-k:after, .preloader-l:after, .preloader-m:after, .preloader-n:after   {
     position: absolute;
     width: 90px;
@@ -2585,10 +2535,9 @@ article{
 }
 .info-vistas{
     position: relative;
-    width: 350px;
+    width: 100%;
     float: left;
     text-align: left;
-    top: 230px;
 }
 .info-vistas h1{
     font-family: 'Josefin Sans', sans-serif;
@@ -2609,10 +2558,10 @@ article{
     font-weight: 200;
     font-size: 1.2em;
     letter-spacing: 1px;
-    
+
 }
 .info-vistas h1 strong{
-font-size: 2em;    
+    font-size: 2em;    
 }
 .imgs-vistas{
     width: 850px;
@@ -2744,4 +2693,134 @@ font-size: 2em;
 }
 .text-televideo h1 strong{
     font-size: 1.2em;
+}
+.bg-rastreo-ab
+{
+    width:100%;
+    float:left;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    background-position:center;
+}
+.bg-rastreo-ab
+{
+    background-image:url(../img/bg-rastreo-ab.png)
+}
+.icon-ubicacion,.icon-encedido,.icon-crecorrido,.icon-reportes,.icon-rmovil,.icon-velocidad
+{
+    width:30px;
+    height:30px;
+    float:left;
+    margin:0 20px 0 0;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position:center
+}
+.icon-ubicacion
+{
+    background-image:url(../img/rastreo/icon-ubicacion.png)
+}
+
+.icon-encedido
+{
+    background-image:url(../img/rastreo/icon-encendido.png)
+}
+
+.icon-crecorrido
+{
+    background-image:url(../img/rastreo/icon-crecorrido.png)
+}
+
+.icon-reportes
+{
+    background-image:url(../img/rastreo/icon-reportes.png)
+}
+
+.icon-rmovil
+{
+    background-image:url(../img/rastreo/icon-rmovil.png)
+}
+
+.icon-velocidad
+{
+    background-image:url(../img/rastreo/icon-velocidad.png)
+}
+#rastreo2
+{
+    background-image:url(../img/bg-rastreo-2.png);
+    background-size:auto 72%;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative
+}
+.img-rastreo-1{
+    width: 80%;
+    margin: 0 10%;
+    padding: 0;
+    position: relative;
+}
+.img-rastreo-3{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.img-rastreo-4{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.text-rastreo-3 h1, .text-rastreo-4 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4em;
+    margin: 1% 0 0 0;
+    padding: 0;
+    text-align: left;
+    color: #002E82;
+    font-weight: 700;
+    line-height: 1;
+}
+.text-rastreo-4 h1{
+    text-align: center;
+}
+.text-rastreo-3 ul{
+    width: 100%;
+    float: left;
+    margin: 30px 0;
+    padding: 0;
+}
+.text-rastreo-3 ul li{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    list-style-type: circle;
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: 200;
+}
+.content-max{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.listado-rastreo{
+    width: 100%;
+    float: left;
+    margin-top: 180px;
+}
+.listado-rastreo li{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  width: 100%;
+  float: left;
+  margin: 10px 0;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 200;
 }

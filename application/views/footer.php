@@ -1,5 +1,5 @@
 <?php $ruta = isset($rut) ? $rut : ''; ?>
-<div class="section " id="section3">
+<div class="section " id="section6">
     <div class="contenedor">
         <footer id="contacto">
             <div class="row datos-contacto">

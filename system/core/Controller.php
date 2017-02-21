@@ -60,8 +60,7 @@ class CI_Controller {
 	}
         
         public function Permitidos(){
-            $permitidos = array('monitoreo','televideo','rastreo','equipos','referido','bucaramanga','barranquilla','cali','girardot',
-            'medellin','tunja','valledupar','villavicencio','sitemap','error',);
+            $permitidos = array('monitoreo','televideo','rastreo','equipos','referido','sitemap','error');
             return $permitidos;
         }
 }

@@ -9,21 +9,14 @@ $equipos = isset($equipos) ? $equipos : '';
     })
 </script>
 <div id="fullpage" itemscope itemtype ="http://schema.org/Product">
-    <figure class="logotipo-monitoreo">
-        <ul>
-            <li><a href="javascript:scrollToCasa();">Monitoreo para hogar</a></li>
-            <li><a href="javascript:scrollToEmpresa();">Monitoreo para empresa</a></li>
-            <li><a href="javascript:scrollToBeneficios();">Beneficios de monitoreo</a></li>
-        </ul>
-    </figure>
 
     <div class="section " id="section0">
         <div class="prueba">
-            <div class="info-vistas" style="top:130px;">
+            <div class="info-vistas" style="width: 350px; top:130px;">
                 <h1><strong>Tele</strong><br><span style="font-size: 0.7em;">monitoreo hogar</span></h1>
                 <h6>Sistema de monitoreo de alarmas para hogares</h6>
                 <p><em>En teselesentinel diseñamos la seguridad de su hogar</em></p>
-                <button class="btn-comprar">Cotizalo ahora</button>
+                <button class="btn-comprar">Contacto comercial</button>
                 <div class="redes-sociales">
                     <a href="https://www.facebook.com/TelesentinelOficial/" target="_blank" class="facebook"><img src="<?= $ruta ?>img/nuevas/icon-facebook.png" alt="Telesentinel en Facebook" title="Telesentinel en Facebook"/></a>
                     <a href="https://www.instagram.com/telesentinel_colombia/" target="_blank" class="Instagram"><img src="<?= $ruta ?>img/nuevas/icon-instagram.png" alt="Telesentinel en Instagram" title="Telesentinel en Instagram"/></a>
@@ -33,23 +26,93 @@ $equipos = isset($equipos) ? $equipos : '';
             <div class="imgs-vistas">
                 <img  class="img-casa" src="<?= $ruta ?>img/nuevas/alarmas-casa.png" alt="" title=""/>
             </div>
-            <!-- botones de alarma para la casa-->
-            <div class="preloader" onClick="mostrar('ploader')"></div>
-            <div class="preloader-a" onClick="mostrar('ploader-a')"></div>
-            <div class="preloader-b" onClick="mostrar('ploader-b')"></div>
-            <div class="preloader-c" onClick="mostrar('ploader-c')"></div>
-            <div class="preloader-d" onClick="mostrar('ploader-d')"></div>
-            <div class="preloader-e" onClick="mostrar('ploader-e')"></div>
-            <div class="preloader-f" onClick="mostrar('ploader-f')"></div>
-            <div class="preloader-g" onClick="mostrar('ploader-g')"></div>
+            <div class="preloader" onClick="mostrar('ploader','element','prueba','footer')"></div>
+            <div class="preloader-a" onClick="mostrar('ploader-a','element','prueba','footer')"></div>
+            <div class="preloader-b" onClick="mostrar('ploader-b','element','prueba','footer')"></div>
+            <div class="preloader-c" onClick="mostrar('ploader-c','element','prueba','footer')"></div>
+            <div class="preloader-d" onClick="mostrar('ploader-d','element','prueba','footer')"></div>
+            <div class="preloader-e" onClick="mostrar('ploader-e','element','prueba','footer')"></div>
+            <div class="preloader-f" onClick="mostrar('ploader-f','element','prueba','footer')"></div>
+            <div class="preloader-g" onClick="mostrar('ploader-g','element','prueba','footer')"></div>
         </div>
-        <a href="javascript:scrollToEmpresa();"><div class="abajomonitoreo"></div></a>
+        
+        <div id="element" style="display: none;" class="footer">
+            <section class="sub-content">
+                <div id="close">
+                    <a class="opc opc-big btn" href="#" onClick="ocultar('element','prueba','footer')">
+                        <span class="glyphicon glyphicon-remove"></span>CERRAR
+                    </a>
+                </div>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item" id="ploader">
+                            <div class="col-md-12">
+                                <img class="imgs-equipos" src="<?= $ruta ?>img/bg-magneticos.png" alt="Magneticos" title="Magneticos"/>
+                            </div>
+                            <div class="col-md-12">
+                                <h1 class="titulo-equipos">Sensores magnéticos</h1>
+                                <p class="descripcion-equipos">Magnéticos de uso liviano para puertas y ventanas que enviarán señales de alarma al momento de apertura o cierre de puertas y ventanas.</p>
+                                <button type="button"><span>Contacto comercial</span></button>
+                            </div>
+                        </div>
+                        <div class="item" id="ploader-a">
+                            <div class="item" id="ploader">
+                                <img class="imgs-equipos" src="<?= $ruta ?>img/bg-boton-panico.png" alt="bontón de pánico" title="bontón de pánico"/>
+
+                                <h1 class="titulo-equipos">Botón de pánico inalamabrico</h1>
+                                <p class="descripcion-equipos">Al presionar el botón se activa el sistema de alarmas; se recibe la señal de emergencia en la central de monitoreo de Telesentinel, se verifica que la señal sea real y se procede con una reacción motorizada por nuestros supervisores.</p>
+                                <button type="button"><span>Contacto comercial</span></button>
+                            </div>
+                        </div>
+                        <div class="item" id="ploader-b">
+                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-radio.png" alt="Radio" title="Radio"/>
+                            <h1 class="titulo-equipos">Radio comunicador GPRS</h1>
+                            <p class="descripcion-equipos">Transmisión de señales de alarma a través de la plataforma de datos de telefonía móvil</p>
+                            <button type="button"><span>Contacto comercial</span></button>
+                        </div>
+                        <div class="item" id="ploader-c">
+                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-sirena.png" alt="Sirena" title="Sirena"/>
+                            <h1 class="titulo-equipos">Sirena</h1>
+                            <p class="descripcion-equipos">Emite señales sonoras como elemento disuasivo</p>
+                            <button type="button"><span>Contacto comercial</span></button>
+                        </div>
+                        <div class="item" id="ploader-e">
+                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-teclado.png" alt="teclado" title="teclado"/>
+                            <h1 class="titulo-equipos">Teclado</h1>
+                            <p class="descripcion-equipos">Permite a usuarios autorizados activar y desactivar el sistema de alarmas, cuenta con botones de: Emergencia, Intrusión y Fuego. Guarda las claves, tiempos entrada, salida y duración de la sirena.</p>
+                            <button type="button"><span>Contacto comercial</span></button>
+                        </div>
+                        <div class="item" id="ploader-f">
+                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-sensor.png" alt="teclado" title="teclado"/>
+                            <h1 class="titulo-equipos">Sensor de doble tecnología</h1>
+                            <p class="descripcion-equipos">Infrarrojo dual de uso interior, integra tecnología infrarroja y microondas; Para hogares, casas, empresas y negocios.</p>
+                            <button type="button"><span>Contacto comercial</span></button>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div>
     </div>
+
+
 
     <div class="section " id="section1">
 
-        <div class="prueba">
-            <div class="info-vistas" style="top:130px;">
+        <div class="prueba-1">
+            <div class="info-vistas" style="width: 350px; top:130px;">
                 <h1><strong>Tele</strong><br><span style="font-size: 0.6em;">monitoreo empresas</span></h1>
                 <h6>Sistema de monitoreo de alarmas para empresas</h6>
                 <p><em>En teselesentinel diseñamos la seguridad para su empresa</em></p>
@@ -63,51 +126,107 @@ $equipos = isset($equipos) ? $equipos : '';
             <div class="imgs-vistas">
                 <img  class="img-casa" src="<?= $ruta ?>img/sistemas-de-alarmas-para-empresas.png" alt="" title=""/>
             </div>
-            <!-- botones de alarma para la casa-->
-            <div class="preloader-h" onClick="mostrar('ploader-h')"></div>
-            <div class="preloader-i" onClick="mostrar('ploader-i')"></div>
-            <div class="preloader-j" onClick="mostrar('ploader-j')"></div>
-            <div class="preloader-k" onClick="mostrar('ploader-k')"></div>
-            <div class="preloader-l" onClick="mostrar('ploader-l')"></div>
-            <div class="preloader-m" onClick="mostrar('ploader-m')"></div>
-            <div class="preloader-n" onClick="mostrar('ploader-n')"></div>
+    
+            <div class="preloader-h" onClick="mostrar('ploader-h','element-1','prueba-1','footer-1')"></div>
+            <div class="preloader-i" onClick="mostrar('ploader-i','element-1','prueba-1','footer-1')"></div>
+            <div class="preloader-j" onClick="mostrar('ploader-j','element-1','prueba-1','footer-1')"></div>
+            <div class="preloader-k" onClick="mostrar('ploader-k','element-1','prueba-1','footer-1')"></div>
+            <div class="preloader-l" onClick="mostrar('ploader-l','element-1','prueba-1','footer-1')"></div>
+            <div class="preloader-m" onClick="mostrar('ploader-m','element-1','prueba-1','footer-1')"></div>
+            <div class="preloader-n" onClick="mostrar('ploader-n','element-1','prueba-1','footer-1')"></div>
         </div>
+        <div id="element-1" style="display: none;" class="footer-1">
+            <section class="sub-content">
 
-<!--<section class="empresa" id="empresa">
-    <h2>Diseñamos la seguridad para su empresa</h2>
-    <div class="md-trigger mtimagen">
-        <div class=" monitoreo-empresa">
-            <figure class="bg-local" id="monitoreo-empresa"></figure>
+                <div id="close">
+                    <a class="opc opc-big btn" href="#" onClick="ocultar('element-1','prueba-1','footer-1')">
+                        <span class="glyphicon glyphicon-remove"></span>CERRAR
+                    </a>
+                </div>
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item" id="ploader-h">
+                            <div class="col-md-12">
+                                <img class="imgs-equipos" src="<?= $ruta ?>img/bg-magneticos.png" alt="Magneticos" title="Magneticos"/>
+                            </div>
+                            <div class="col-md-12">
+                                <h1 class="titulo-equipos">Sensores magnéticos</h1>
+                                <p class="descripcion-equipos">Magnéticos de uso liviano para puertas y ventanas que enviarán señales de alarma al momento de apertura o cierre de puertas y ventanas.</p>
+                                <div class="morph-button morph-button-inflow morph-button-inflow-2">
+                                    <button type="button"><span>Contacto comercial</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item" id="ploader-a">
+                            <div class="item" id="ploader-i">
+                                <img class="imgs-equipos" src="<?= $ruta ?>img/bg-boton-panico.png" alt="bontón de pánico" title="bontón de pánico"/>
+
+                                <h1 class="titulo-equipos">Botón de pánico inalamabrico</h1>
+                                <p class="descripcion-equipos">Al presionar el botón se activa el sistema de alarmas; se recibe la señal de emergencia en la central de monitoreo de Telesentinel, se verifica que la señal sea real y se procede con una reacción motorizada por nuestros supervisores.</p>
+                                <div class="morph-button morph-button-inflow morph-button-inflow-2">
+                                    <button type="button"><span>Contacto comercial</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item" id="ploader-j">
+                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-radio.png" alt="Radio" title="Radio"/>
+                            <h1 class="titulo-equipos">Radio comunicador GPRS</h1>
+                            <p class="descripcion-equipos">Transmisión de señales de alarma a través de la plataforma de datos de telefonía móvil</p>
+                            <div class="morph-button morph-button-inflow morph-button-inflow-2">
+                                <button type="button"><span>Contacto comercial</span></button>
+                            </div>
+                        </div>
+
+                        <div class="item" id="ploader-k">
+                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-sirena.png" alt="Sirena" title="Sirena"/>
+                            <h1 class="titulo-equipos">Sirena</h1>
+                            <p class="descripcion-equipos">Emite señales sonoras como elemento disuasivo</p>
+                            <div class="morph-button morph-button-inflow morph-button-inflow-2">
+                                <button type="button"><span>Contacto comercial</span></button>
+                            </div>
+                        </div>
+
+                        <div class="item" id="ploader-l">
+                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-teclado.png" alt="teclado" title="teclado"/>
+                            <h1 class="titulo-equipos">Teclado</h1>
+                            <p class="descripcion-equipos">Permite a usuarios autorizados activar y desactivar el sistema de alarmas, cuenta con botones de: Emergencia, Intrusión y Fuego. Guarda las claves, tiempos entrada, salida y duración de la sirena.</p>
+                            <div class="morph-button morph-button-inflow morph-button-inflow-2">
+                                <button type="button"><span>Contacto comercial</span></button>
+                            </div>
+                        </div>
+
+                        <div class="item" id="ploader-m">
+                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-sensor.png" alt="teclado" title="teclado"/>
+                            <h1 class="titulo-equipos">Sensor de doble tecnología</h1>
+                            <p class="descripcion-equipos">Infrarrojo dual de uso interior, integra tecnología infrarroja y microondas; Para hogares, casas, empresas y negocios.</p>
+                            <div class="morph-button morph-button-inflow morph-button-inflow-2">
+                                <button type="button"><span>Contacto comercial</span></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </section>
         </div>
-    </div>
-    <div class="tooltip tooltip-west btn-panico-negocios">
-        <span class="tooltip-item"></span>
-        <span class="tooltip-content">
-            <a href="<?= $equipos ?>boton-panico/">
-                <img src="<?= $ruta ?>img/equipos/btn-panico.png" alt=""/>
-                <span>Botones de pánico</span>
-            </a>
-        </span>
-    </div>
-    <div class="tooltip tooltip-west infrarrojo-negocios">
-        <span class="tooltip-item"></span>
-        <span class="tooltip-content">
-            <a href="<?= $equipos ?>sensor-doble-tecnologia/">
-                <img src="<?= $ruta ?>img/equipos/sensor.png" alt=""/>
-                <span>Sensor de infrarojo</span>
-            </a>
-        </span>
-    </div>
-    <div class="tooltip tooltip-east vibrosensor-negocio">
-        <span class="tooltip-item"></span>
-        <span class="tooltip-content">
-            <img src="<?= $ruta ?>img/equipos/vibro-sensor.png" alt=""/>
-            <span>Vibro sensor</span>
-        </span>
-    </div>
-    <a href="javascript:scrollToBeneficios();"><div class="abajomonitoreo"></div></a>
-</section>-->
-
     </div>
 
     <div class="section " id="section2">
@@ -173,117 +292,6 @@ $equipos = isset($equipos) ? $equipos : '';
             </div>
         </section>
     </div>
-    <div id="element" style="display: none;" class="footer">
-        <section class="sub-content">
-
-            <div id="close">
-                <a class="opc opc-big btn" href="#" onClick="ocultar()">
-                    <span class="glyphicon glyphicon-remove"></span>CERRAR
-                </a>
-            </div>
-
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner" role="listbox">
-                    <div class="item" id="ploader">
-                        <div class="col-md-12">
-                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-magneticos.png" alt="Magneticos" title="Magneticos"/>
-                        </div>
-                        <div class="col-md-12">
-                            <h1 class="titulo-equipos">Sensores magnéticos</h1>
-                            <p class="descripcion-equipos">Magnéticos de uso liviano para puertas y ventanas que enviarán señales de alarma al momento de apertura o cierre de puertas y ventanas.</p>
-                            <div class="morph-button morph-button-inflow morph-button-inflow-2">
-                                <button type="button"><span>Adquieralo ya</span></button>
-                                <div class="morph-content">
-                                    <div>
-                                        <div class="content-style-social">
-                                            <a>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item" id="ploader-a">
-                        <div class="item" id="ploader">
-                            <img class="imgs-equipos" src="<?= $ruta ?>img/bg-boton-panico.png" alt="bontón de pánico" title="bontón de pánico"/>
-
-                            <h1 class="titulo-equipos">Botón de pánico inalamabrico</h1>
-                            <p class="descripcion-equipos">Al presionar el botón se activa el sistema de alarmas; se recibe la señal de emergencia en la central de monitoreo de Telesentinel, se verifica que la señal sea real y se procede con una reacción motorizada por nuestros supervisores.</p>
-                            <div class="morph-button morph-button-inflow morph-button-inflow-2">
-                                <button type="button"><span>Adquieralo ya</span></button>
-                                <div class="morph-content">
-                                    <div>
-                                        <div class="content-style-social">
-                                            <a>
-                                                hola
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="item" id="ploader-b">
-                        <img class="imgs-equipos" src="<?= $ruta ?>img/bg-radio.png" alt="Radio" title="Radio"/>
-                        <h1 class="titulo-equipos">Radio comunicador GPRS</h1>
-                        <p class="descripcion-equipos">Transmisión de señales de alarma a través de la plataforma de datos de telefonía móvil</p>
-                        <div class="morph-button morph-button-inflow morph-button-inflow-2">
-                            <button type="button"><span>Adquieralo ya</span></button>
-                        </div>
-                    </div>
-
-                    <div class="item" id="ploader-c">
-                        <img class="imgs-equipos" src="<?= $ruta ?>img/bg-sirena.png" alt="Sirena" title="Sirena"/>
-                        <h1 class="titulo-equipos">Sirena</h1>
-                        <p class="descripcion-equipos">Emite señales sonoras como elemento disuasivo</p>
-                        <div class="morph-button morph-button-inflow morph-button-inflow-2">
-                            <button type="button"><span>Adquieralo ya</span></button>
-                        </div>
-                    </div>
-
-                    <div class="item" id="ploader-e">
-                        <img class="imgs-equipos" src="<?= $ruta ?>img/bg-teclado.png" alt="teclado" title="teclado"/>
-                        <h1 class="titulo-equipos">Teclado</h1>
-                        <p class="descripcion-equipos">Permite a usuarios autorizados activar y desactivar el sistema de alarmas, cuenta con botones de: Emergencia, Intrusión y Fuego. Guarda las claves, tiempos entrada, salida y duración de la sirena.</p>
-                        <div class="morph-button morph-button-inflow morph-button-inflow-2">
-                            <button type="button"><span>Adquieralo ya</span></button>
-                        </div>
-                    </div>
-
-                    <div class="item" id="ploader-f">
-                        <img class="imgs-equipos" src="<?= $ruta ?>img/bg-sensor.png" alt="teclado" title="teclado"/>
-                        <h1 class="titulo-equipos">Sensor de doble tecnología</h1>
-                        <p class="descripcion-equipos">Infrarrojo dual de uso interior, integra tecnología infrarroja y microondas; Para hogares, casas, empresas y negocios.</p>
-                        <div class="morph-button morph-button-inflow morph-button-inflow-2">
-                            <button type="button"><span>Adquieralo ya</span></button>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-        </section>
-    </div>
 </div>
 
 <script type="text/javascript">
@@ -317,3 +325,4 @@ $equipos = isset($equipos) ? $equipos : '';
 </script>
 
 
+ 
